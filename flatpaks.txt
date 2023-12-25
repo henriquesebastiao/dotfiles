@@ -1,0 +1,11 @@
+Microsoft Edge	com.microsoft.Edge	120.0.2210.61-1	stable	system
+DBeaver Community	io.dbeaver.DBeaverCommunity	23.3.0	stable	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.19	22.08	system
+Mesa	org.freedesktop.Platform.GL.default	23.1.9	22.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	23.1.9	22.08-extra	system
+Mesa	org.freedesktop.Platform.GL.default	23.3.0	23.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	23.3.0	23.08-extra	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+GNOME Application Platform version 45	org.gnome.Platform		45	system
