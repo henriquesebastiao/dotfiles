@@ -1,2 +1,3 @@
 alias tr="tree"
 alias pip-rm-all="pip freeze | xargs pip uninstall -y"
+alias activate="source venv/bin/activate"

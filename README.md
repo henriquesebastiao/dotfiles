@@ -11,3 +11,4 @@ Configurações do meu ambiente.
 
 - ZSH (Oh My Zsh) - Os passos para a configuração do ZSH estão [aqui](zsh/README.md.md)
 - Monitor primário: HDMI-0 - Adicioar ao diretório `/etc/X11/xorg.conf.d/` o arquivo `10-monitors.conf`
+- Aliases - Adicionar ao arquivo `~/.zshrc` a chamada do arquivo `.aliases`
