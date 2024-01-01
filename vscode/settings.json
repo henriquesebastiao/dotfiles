@@ -1,0 +1,121 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "cssPeek.peekFromLanguages": [
+        "laravel-blade",
+        "razor",
+        "vue",
+        "blade",
+        "pug",
+        "jade",
+        "handlebars",
+        "php",
+        "twig",
+        "md",
+        "nunjucks",
+        "javascript",
+        "javascriptreact",
+        "erb",
+        "typescript",
+        "typescriptreact",
+        "HTML (Eex)",
+        "html-eex",
+        "ejs"
+    ],
+    "editor.linkedEditing": true,
+    "window.titleBarStyle": "custom",
+    "editor.fontLigatures": false,
+    "debug.console.fontFamily": "'JetBrains Mono', monospace",
+    "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
+    "editor.inlineSuggest.enabled": true,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "terminal.external.windowsExec": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\PowerShell\\PowerShell 7 (x64).lnk",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false
+    },
+    "editor.fontFamily": "'JetBrains Mono', monospace",
+    "gitlens.hovers.currentLine.over": "line",
+    "discord.largeImageIdling": "Codando",
+    "discord.lowerDetailsIdling": "Codando",
+    "discord.removeTimestamp": true,
+    "discord.detailsEditing": "Codando {file_name}",
+    "discord.lowerDetailsEditing": "Repositório: {workspace}",
+    "discord.smallImage": "{app_name} 1.74.3",
+    "pomodoro.workTime": 30,
+    "editor.accessibilitySupport": "off",
+    "bookmarks.sideBar.expanded": true,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "liveServer.settings.donotVerifyTags": true,
+    "discord.detailsIdling": "Coffee",
+    "dart.sdkPath": "C:\\Users\\hsofi\\Documents\\SDKs\\dart-sdk",
+    "dart.checkForSdkUpdates": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontVariations": false,
+    "editor.codeLensFontFamily": "'JetBrains Mono', monospace",
+    "editor.inlayHints.fontFamily": "'JetBrains Mono', monospace",
+    "notebook.output.fontFamily": "'JetBrains Mono', monospace",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "remote.SSH.remotePlatform": {
+        "89.116.225.77": "linux"
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "editor.fontSize": 13,
+    "editor.fontWeight": "350",
+    "debug.console.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
+    "editor.lineHeight": 1.7,
+    "workbench.colorTheme": "JetBrains New Dark",
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.expandMode": "doubleClick",
+    "git.suggestSmartCommit": false,
+}
