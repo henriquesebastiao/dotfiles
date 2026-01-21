@@ -1,0 +1,100 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_config.toml:
+    src: config/atuin/config.toml
+    dst: ~/.config/atuin/config.toml
+    chmod: '600'
+  f_config.conf:
+    src: config/neofetch/config.conf
+    dst: ~/.config/neofetch/config.conf
+  f_settings.json:
+    src: config/zed/settings.json
+    dst: ~/.config/zed/settings.json
+    chmod: '600'
+  f_zeal.conf:
+    src: config/Zeal/Zeal.conf
+    dst: ~/.config/Zeal/Zeal.conf
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_pypoetry_config.toml:
+    src: config/pypoetry/config.toml
+    dst: ~/.config/pypoetry/config.toml
+    chmod: '600'
+  f_user-dirs.dirs:
+    src: config/user-dirs.dirs
+    dst: ~/.config/user-dirs.dirs
+    chmod: '600'
+  f_user-dirs.locale:
+    src: config/user-dirs.locale
+    dst: ~/.config/user-dirs.locale
+  f_2026-01-21_03-07-05_linux.conf:
+    src: boot/loader/entries/2026-01-21_03-07-05_linux.conf
+    dst: /boot/loader/entries/2026-01-21_03-07-05_linux.conf
+    chmod: '755'
+  f_pacman.conf:
+    src: etc/pacman.conf
+    dst: /etc/pacman.conf
+  f_host.conf:
+    src: etc/host.conf
+    dst: /etc/host.conf
+  f_locale.conf:
+    src: etc/locale.conf
+    dst: /etc/locale.conf
+  f_locale.gen:
+    src: etc/locale.gen
+    dst: /etc/locale.gen
+  f_nanorc:
+    src: etc/nanorc
+    dst: /etc/nanorc
+  f_netconfig:
+    src: etc/netconfig
+    dst: /etc/netconfig
+  f_resolv.conf:
+    src: etc/resolv.conf
+    dst: /etc/resolv.conf
+  f_00-keyboard.conf:
+    src: etc/X11/xorg.conf.d/00-keyboard.conf
+    dst: /etc/X11/xorg.conf.d/00-keyboard.conf
+  f_10-monitors.conf:
+    src: etc/X11/xorg.conf.d/10-monitors.conf
+    dst: /etc/X11/xorg.conf.d/10-monitors.conf
+profiles:
+  archlinux:
+    dotfiles:
+    - f_config.toml
+    - f_config.conf
+    - f_settings.json
+    - f_zeal.conf
+    - f_gitconfig
+    - f_zshrc
+    - f_pypoetry_config.toml
+    - f_user-dirs.dirs
+    - f_user-dirs.locale
+    - f_2026-01-21_03-07-05_linux.conf
+    - f_pacman.conf
+    - f_host.conf
+    - f_locale.conf
+    - f_locale.gen
+    - f_nanorc
+    - f_netconfig
+    - f_resolv.conf
+    - f_00-keyboard.conf
+    - f_10-monitors.conf
+  homelab:
+    dotfiles:
+    - f_config.toml
+    - f_config.conf
+    - f_gitconfig
+    - f_zshrc
