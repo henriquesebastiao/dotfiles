@@ -73,6 +73,14 @@ dotfiles:
   f_aliases:
     src: aliases
     dst: ~/.aliases
+  f_config.yml:
+    src: config/gh/config.yml
+    dst: ~/.config/gh/config.yml
+    chmod: '600'
+  f_hosts.yml:
+    src: config/gh/hosts.yml
+    dst: ~/.config/gh/hosts.yml
+    chmod: '600'
 profiles:
   archlinux:
     dotfiles:
@@ -96,6 +104,8 @@ profiles:
     - f_00-keyboard.conf
     - f_10-monitors.conf
     - f_aliases
+    - f_config.yml
+    - f_hosts.yml
   homelab:
     dotfiles:
     - f_config.toml
