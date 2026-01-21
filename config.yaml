@@ -81,6 +81,9 @@ dotfiles:
     src: config/gh/hosts.yml
     dst: ~/.config/gh/hosts.yml
     chmod: '600'
+  f_config:
+    src: bundle/config
+    dst: ~/.bundle/config
 profiles:
   archlinux:
     dotfiles:
@@ -106,6 +109,7 @@ profiles:
     - f_aliases
     - f_config.yml
     - f_hosts.yml
+    - f_config
   homelab:
     dotfiles:
     - f_config.toml
