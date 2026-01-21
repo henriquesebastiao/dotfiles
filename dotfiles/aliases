@@ -25,6 +25,7 @@ alias weather="curl 'https://wttr.in/Aripuana?lang=pt'" # Previsão do tempo
 alias ipp="curl https://api.ipify.org" # IP Público
 alias aliases="cat ~/.aliases"
 alias ls="lsd"
+alias dotcommit="git commit -m 'update: $(date -u +"%Y-%m-%d %H:%M:%S %Z")'"
 
 # Ubuntu
 alias apts="apt search"

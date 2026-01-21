@@ -110,3 +110,6 @@ eval "$(atuin init zsh)"
 # Aliases
 source ~/.aliases
 
+
+# Created by `pipx` on 2026-01-21 10:32:24
+export PATH="$PATH:/home/hick/.local/bin"
