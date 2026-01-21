@@ -70,6 +70,9 @@ dotfiles:
   f_10-monitors.conf:
     src: etc/X11/xorg.conf.d/10-monitors.conf
     dst: /etc/X11/xorg.conf.d/10-monitors.conf
+  f_aliases:
+    src: aliases
+    dst: ~/.aliases
 profiles:
   archlinux:
     dotfiles:
@@ -92,6 +95,7 @@ profiles:
     - f_resolv.conf
     - f_00-keyboard.conf
     - f_10-monitors.conf
+    - f_aliases
   homelab:
     dotfiles:
     - f_config.toml
