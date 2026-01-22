@@ -82,7 +82,7 @@
 
     - name: Ativando pipewire
       become: yes
-      become_user: hick
+      become_user: ansible_user_id
       ansible.builtin.systemd_service:
         name: pipewire
         enabled: true
