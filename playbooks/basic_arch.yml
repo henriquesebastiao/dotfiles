@@ -4,6 +4,13 @@
 
 
   tasks:
+    - name: Obtendo o nome do usuário
+      become: false
+      local_action: command whoami
+      register: username
+    
+    - debug: var=username
+      
     - name: Instalação devel
       become: yes
       package:
@@ -82,7 +89,7 @@
 
     - name: Ativando pipewire
       become: yes
-      become_user: "{{ lookup('env','USER') }}"
+      become_user: var=username
       ansible.builtin.systemd_service:
         name: pipewire
         enabled: true
