@@ -82,7 +82,7 @@
 
     - name: Ativando pipewire
       become: yes
-      become_user: '{{ ansible_facts["ansible_user_id"] }}'
+      become_user: ansible_facts["ansible_user_id"]
       ansible.builtin.systemd_service:
         name: pipewire
         enabled: true
@@ -120,7 +120,7 @@
 
     - name: Configuração zsh
       become: yes
-      shell: chsh -s /usr/bin/zsh '{{ ansible_facts["ansible_user_id"] }}'
+      shell: chsh -s /usr/bin/zsh ansible_facts["ansible_user_id"]
       # TODO: Ajustar isso
 
     - name: Instalação bpytop
