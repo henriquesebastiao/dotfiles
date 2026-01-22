@@ -207,3 +207,21 @@
       package:
         name: ttf-jetbrains-mono-nerd
         state: present
+
+    - name: Instalação ttf-dejavu
+      become: yes
+      package:
+        name: ttf-dejavu
+        state: present
+    
+    - name: Instalação noto-fonts
+      become: yes
+      package:
+        name: noto-fonts
+        state: present
+    
+    - name: Instalação ttf-liberation
+      become: yes
+      package:
+        name: ttf-liberation
+        state: present
