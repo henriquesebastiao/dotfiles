@@ -291,3 +291,7 @@
       package:
         name: man-pages # Páginas de manual
         state: present
+
+    - name: Habilita o repositório multilib
+      become: yes
+      shell: sudo sed -i '/\[multilib\]/,/Include/s/^#//' /etc/pacman.conf && sudo pacman -Syu

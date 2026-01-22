@@ -1,5 +1,7 @@
 Playbooks
 
+Esse script de provisionamento deve ser executado em uma instalação do Arch Linux GNOME com o usuário de nome `hick`.
+
 Para provisionar meu sistema de uso com todas as ferramentas e configurações uso o Ansible, basta executar:
 
 ```shell
@@ -8,7 +10,7 @@ sudo pacman -S git ansible --noconfirm
 git clone https://github.com/henriquesebastiao/dotfiles.git
 cd dotfiles/playbooks
 sudo ansible-playbook basic_arch.yml
-ansible-galaxy collection install -r requirements.yml
+sudo ansible-galaxy collection install -r requirements.yml
 sudo ansible-playbook tasks.yml
 ```
 
