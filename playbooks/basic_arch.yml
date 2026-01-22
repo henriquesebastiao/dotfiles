@@ -177,6 +177,18 @@
       package:
         name: gnome-shell-extension-caffeine
         state: present
+      
+    - name: Habilitar uso de extensões no sistema
+      become: yes
+      shell: gsettings set org.gnome.shell disable-user-extensions false
+    
+    - name: Habilita extensão appindicator
+      become: yes
+      shell: gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+    
+    - name: Habilita extensão caffeine
+      become: yes
+      shell: gnome-extensions enable caffeine@patapon.info
 
     - name: Instalação htop
       become: yes

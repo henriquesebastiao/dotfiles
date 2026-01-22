@@ -12,4 +12,19 @@ ansible-galaxy collection install -r requirements.yml
 sudo ansible-playbook tasks.yml
 ```
 
-Agora basta reiniciar e e aproveitar o sistema.
+> Agora basta reiniciar e e aproveitar o sistema.
+
+Após instalar o sistema algumas outras configurações precisam ser feitas manualmente como:
+
+Fazer login nos seguintes apps:
+
+- Anki
+- Tailscale
+- Bitwarden
+- Discord
+- Newsflash
+
+E também:
+
+- Baixar documentações do Zeal.
+- Configurar Obsidian.
