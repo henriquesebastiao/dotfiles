@@ -7,6 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ssh_connections": [
+    {
+      "host": "172.16.0.2",
+      "username": "hick",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/hick"
+          ]
+        },
+        {
+          "paths": [
+            "/home/hick/homelab"
+          ]
+        }
+      ]
+    }
+  ],
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
