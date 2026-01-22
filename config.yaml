@@ -91,6 +91,9 @@ dotfiles:
     src: config/htop/htoprc
     dst: ~/.config/htop/htoprc
     chmod: '600'
+  f_spaceship.zsh:
+    src: config/spaceship.zsh
+    dst: ~/.config/spaceship.zsh
 profiles:
   archlinux:
     dotfiles:
@@ -119,6 +122,7 @@ profiles:
     - f_config
     - f_blacklist.conf
     - f_htoprc
+    - f_spaceship.zsh
   homelab:
     dotfiles:
     - f_config.toml
@@ -127,3 +131,4 @@ profiles:
     - f_zshrc
     - f_htoprc
     - f_aliases
+    - f_spaceship.zsh
