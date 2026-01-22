@@ -90,3 +90,15 @@
       package:
         name: ipython
         state: present
+    
+    - name: Instalação arduino-cli
+      become: yes
+      package:
+        name: arduino-cli
+        state: present
+    
+    - name: Instalação binwalk
+      become: yes
+      package:
+        name: binwalk  # Ferramenta para análise de firmwares
+        state: present

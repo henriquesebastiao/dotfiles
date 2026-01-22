@@ -84,4 +84,16 @@
         name: arduino-ide-bin
         state: present
       become: yes
-      become_user: aur_builder 
+      become_user: aur_builder
+    
+    - name: Instalação gnome-shell-extension-clipboard-indicator
+      kewlfft.aur.aur:
+        use: yay
+        name: gnome-shell-extension-clipboard-indicator
+        state: present
+      become: yes
+      become_user: aur_builder
+    
+    - name: Habilita extensão clipboard-indicator
+      become: yes
+      shell: gnome-extensions enable clipboard-indicator@tudmotu.com
