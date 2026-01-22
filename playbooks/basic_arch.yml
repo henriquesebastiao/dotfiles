@@ -33,6 +33,12 @@
       package:
         name: eza  # ls com formato de árvore com `eza -T`
         state: present
+    
+    - name: Instalação lsd
+      become: yes
+      package:
+        name: lsd  # ls com ícones
+        state: present
 
     - name: Instalação bat
       become: yes
@@ -45,10 +51,10 @@
         repo: https://github.com/henriquesebastiao/dotfiles.git
         dest: dotfiles
 
-    - name: chown dotfiles
-      become: yes
-      shell: chown -R vagrant:vagrant .
-      # TODO: Ajustar isso
+    # - name: chown dotfiles
+    #   become: yes
+    #   shell: chown -R vagrant:vagrant .
+    #   # TODO: Ajustar isso
 
     - name: Instalação pipewire
       become: yes
@@ -76,7 +82,7 @@
 
     - name: Ativando pipewire
       become: yes
-      become_user: vagrant
+      become_user: "{{ ansible_user_id }}"
       ansible.builtin.systemd_service:
         name: pipewire
         enabled: true
@@ -100,10 +106,10 @@
         name: NetworkManager
         enabled: true
 
-    - name: Instalação terminator
+    - name: Instalação ptyxis
       become: yes
       package:
-        name: terminator
+        name: ptyxis
         state: present
 
     - name: Instalação zsh
@@ -114,11 +120,29 @@
 
     - name: Configuração zsh
       become: yes
-      shell: chsh -s /usr/bin/zsh vagrant
+      shell: chsh -s /usr/bin/zsh {{ ansible_user_id }}
       # TODO: Ajustar isso
 
     - name: Instalação bpytop
       become: yes
       package:
         name: bpytop
+        state: present
+    
+    - name: Instalação neofetch
+      become: yes
+      package:
+        name: neofetch
+        state: present
+    
+    - name: Instalação nmap
+      become: yes
+      package:
+        name: nmap
+        state: present
+    
+    - name: Instalação ascii
+      become: yes
+      package:
+        name: ascii
         state: present
