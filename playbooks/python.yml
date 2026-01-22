@@ -1,0 +1,12 @@
+---
+- name: Instalação das ferramentas python
+  hosts: localhost
+
+  tasks:
+    - name: Install ignr
+      community.general.pipx:
+        name: ignr
+    
+    - name: Install pepotron
+      community.general.pipx:
+        name: pepotron

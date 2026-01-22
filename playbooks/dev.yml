@@ -1,0 +1,92 @@
+---
+- name: Instalação de ferramentas de desenvolvimento
+  hosts: localhost
+
+  tasks:
+    - name: Instalação dbeaver
+      become: yes
+      package:
+        name: dbeaver
+        state: present
+
+    - name: Instalação docker
+      become: yes
+      package:
+        name: docker
+        state: present
+    
+    - name: Habilita o docker
+      shell: sudo systemctl enable --now docker.service && sudo systemctl start docker.service
+    
+    - name: Configura docker para executar sem sudo
+      shell: sudo usermod -aG docker $USER && newgrp docker
+    
+    - name: Instalação gemini-cli
+      become: yes
+      package:
+        name: gemini-cli
+        state: present
+    
+    - name: Instalação github-cli
+      become: yes
+      package:
+        name: github-cli
+        state: present
+    
+    - name: Instalação just
+      become: yes
+      package:
+        name: just
+        state: present
+    
+    - name: Instalação python-pipx
+      become: yes
+      package:
+        name: python-pipx
+        state: present
+    
+    - name: Configuração pipx
+      become: yes
+      shell: pipx ensurepath
+    
+    - name: Instalação python-poetry
+      become: yes
+      package:
+        name: python-poetry
+        state: present
+    
+    - name: Instalação ruby
+      become: yes
+      package:
+        name: ruby
+        state: present
+    
+    - name: Instalação ruby-bundler
+      become: yes
+      package:
+        name: ruby-bundler
+        state: present
+    
+    - name: Instalação vagrant
+      become: yes
+      package:
+        name: vagrant
+        state: present
+    
+    - name: Instalação zeal
+      become: yes
+      package:
+        name: zeal
+        state: present
+    
+    - name: Instalação zed
+      become: yes
+      package:
+        name: zed
+        state: present
+
+    - name: Instalação ipython
+      become: yes
+      package:
+        name: ipython
+        state: present

@@ -2,7 +2,6 @@
 - name: Instalação inicial do sistema
   hosts: localhost
 
-
   tasks:      
     - name: Instalação devel
       become: yes
@@ -50,11 +49,6 @@
       git:
         repo: https://github.com/henriquesebastiao/dotfiles.git
         dest: dotfiles
-
-    # - name: chown dotfiles
-    #   become: yes
-    #   shell: chown -R vagrant:vagrant .
-    #   # TODO: Ajustar isso
 
     - name: Instalação pipewire
       become: yes
@@ -139,4 +133,46 @@
       become: yes
       package:
         name: ascii
+        state: present
+    
+    - name: Instalação fuse2
+      become: yes
+      package:
+        name: fuse2
+        state: present
+    
+    - name: Instalação fuse2fs
+      become: yes
+      package:
+        name: fuse2fs
+        state: present
+    
+    - name: Instalação gnome-shell-extension-appindicator
+      become: yes
+      package:
+        name: gnome-shell-extension-appindicator
+        state: present
+    
+    - name: Instalação gnome-shell-extension-caffeine
+      become: yes
+      package:
+        name: gnome-shell-extension-caffeine
+        state: present
+
+    - name: Instalação htop
+      become: yes
+      package:
+        name: htop
+        state: present
+    
+    - name: Instalação tailscale
+      become: yes
+      package:
+        name: tailscale
+        state: present
+    
+    - name: Instalação ttf-jetbrains-mono-nerd
+      become: yes
+      package:
+        name: ttf-jetbrains-mono-nerd
         state: present

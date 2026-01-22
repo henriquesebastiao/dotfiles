@@ -1,0 +1,68 @@
+---
+- name: Instalação dos programas com GUI
+  hosts: localhost
+
+  tasks:
+    - name: Instalação bitwarden
+      become: yes
+      package:
+        name: bitwarden
+        state: present
+
+    - name: Instalação bitwarden
+      become: yes
+      package:
+        name: bitwarden
+        state: present
+    
+    - name: Instalação discord
+      become: yes
+      package:
+        name: discord
+        state: present
+    
+    - name: Instalação filezilla
+      become: yes
+      package:
+        name: filezilla
+        state: present
+    
+    - name: Instalação newsflash
+      become: yes
+      package:
+        name: newsflash
+        state: present
+    
+    - name: Instalação tor
+      become: yes
+      package:
+        name: tor
+        state: present
+    
+    - name: Instalação torbrowser-launcher
+      become: yes
+      package:
+        name: torbrowser-launcher
+        state: present
+    
+    - name: Instalação virtualbox
+      become: yes
+      package:
+        name: virtualbox
+        state: present
+    
+    - name: Instalação virtualbox-host-modules-arch
+      become: yes
+      package:
+        name: virtualbox-host-modules-arch
+        state: present
+    
+    - name: Habilita o docker
+      shell: sudo modprobe vboxdrv && sudo modprobe vboxnetadp && sudo modprobe vboxnetflt && sudo modprobe -r kvm_intel
+    
+    - name: Instalação wireshark-qt
+      become: yes
+      package:
+        name: wireshark-qt
+        state: present
+        
