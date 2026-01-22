@@ -129,12 +129,6 @@
         name: bpytop
         state: present
     
-    - name: Instalação neofetch
-      become: yes
-      package:
-        name: neofetch
-        state: present
-    
     - name: Instalação nmap
       become: yes
       package:
