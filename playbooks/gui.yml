@@ -107,4 +107,9 @@
       package:
         name: telegram-desktop
         state: present
-        
+    
+    - name: Criando pastas
+      shell: mkdir -p ~/git && mkdir -p ~/.temp
+    
+    - name: Adiciona atalhos ao nautilus
+      shell: echo "file:///home/$USER/git git" >>~/.config/gtk-3.0/bookmarks && echo "file:///home/$USER/.temp .temp" >>~/.config/gtk-3.0/bookmarks
