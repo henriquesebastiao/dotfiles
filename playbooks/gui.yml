@@ -8,12 +8,6 @@
       package:
         name: bitwarden
         state: present
-
-    - name: Instalação bitwarden
-      become: yes
-      package:
-        name: bitwarden
-        state: present
     
     - name: Instalação discord
       become: yes
@@ -57,12 +51,24 @@
         name: virtualbox-host-modules-arch
         state: present
     
-    - name: Habilita o docker
+    - name: Prepara virtualbox
       shell: sudo modprobe vboxdrv && sudo modprobe vboxnetadp && sudo modprobe vboxnetflt && sudo modprobe -r kvm_intel
     
     - name: Instalação wireshark-qt
       become: yes
       package:
         name: wireshark-qt
+        state: present
+    
+    - name: Instalação obsidian
+      become: yes
+      package:
+        name: obsidian
+        state: present
+    
+    - name: Instalação helvum
+      become: yes
+      package:
+        name: helvum  # GTK patchbay for PipeWire
         state: present
         

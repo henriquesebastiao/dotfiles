@@ -77,3 +77,11 @@
         state: present
       become: yes
       become_user: aur_builder
+    
+    - name: Instalação arduino-ide-bin
+      kewlfft.aur.aur:
+        use: yay
+        name: arduino-ide-bin
+        state: present
+      become: yes
+      become_user: aur_builder 

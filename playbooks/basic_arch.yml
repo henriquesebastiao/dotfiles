@@ -45,7 +45,7 @@
         name: bat  # cat com número de linhas e cores
         state: present
 
-    - name: Cópia dotfiles
+    - name: Copia dotfiles
       git:
         repo: https://github.com/henriquesebastiao/dotfiles.git
         dest: dotfiles
@@ -103,7 +103,7 @@
     - name: Instalação ptyxis
       become: yes
       package:
-        name: ptyxis
+        name: ptyxis  # Emulador de terminal
         state: present
 
     - name: Instalação zsh
@@ -115,7 +115,6 @@
     - name: Configuração zsh
       become: yes
       shell: chsh -s /usr/bin/zsh hick
-      # TODO: Ajustar isso
 
     - name: Instalação bpytop
       become: yes

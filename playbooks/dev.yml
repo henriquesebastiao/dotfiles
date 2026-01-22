@@ -76,7 +76,7 @@
     - name: Instalação zeal
       become: yes
       package:
-        name: zeal
+        name: zeal  # Documentação offline
         state: present
     
     - name: Instalação zed

@@ -10,3 +10,7 @@
     - name: Install pepotron
       community.general.pipx:
         name: pepotron
+    
+    - name: Install mkx
+      community.general.pipx:
+        name: mkx

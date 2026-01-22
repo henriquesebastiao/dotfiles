@@ -15,6 +15,3 @@
 
 - name: gui
   import_playbook: gui.yml
-
-# - name: work
-#   import_playbook: work.yml
