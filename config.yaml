@@ -94,6 +94,25 @@ dotfiles:
   f_spaceship.zsh:
     src: config/spaceship.zsh
     dst: ~/.config/spaceship.zsh
+  f_vimrc:
+    src: etc/vimrc
+    dst: /etc/vimrc
+  f_foremost.conf:
+    src: etc/foremost.conf
+    dst: /etc/foremost.conf
+    chmod: '444'
+  f_hosts:
+    src: etc/hosts
+    dst: /etc/hosts
+  f_makepkg.conf:
+    src: etc/makepkg.conf
+    dst: /etc/makepkg.conf
+  f_torrc:
+    src: etc/tor/torrc
+    dst: /etc/tor/torrc
+  f_vbox.cfg:
+    src: etc/vbox/vbox.cfg
+    dst: /etc/vbox/vbox.cfg
 profiles:
   archlinux:
     dotfiles:
@@ -123,6 +142,12 @@ profiles:
     - f_blacklist.conf
     - f_htoprc
     - f_spaceship.zsh
+    - f_vimrc
+    - f_foremost.conf
+    - f_hosts
+    - f_makepkg.conf
+    - f_torrc
+    - f_vbox.cfg
   homelab:
     dotfiles:
     - f_config.toml
