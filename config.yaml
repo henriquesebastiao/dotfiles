@@ -87,6 +87,10 @@ dotfiles:
   f_blacklist.conf:
     src: etc/modprobe.d/blacklist.conf
     dst: /etc/modprobe.d/blacklist.conf
+  f_htoprc:
+    src: config/htop/htoprc
+    dst: ~/.config/htop/htoprc
+    chmod: '600'
 profiles:
   archlinux:
     dotfiles:
@@ -114,9 +118,12 @@ profiles:
     - f_hosts.yml
     - f_config
     - f_blacklist.conf
+    - f_htoprc
   homelab:
     dotfiles:
     - f_config.toml
     - f_config.conf
     - f_gitconfig
     - f_zshrc
+    - f_htoprc
+    - f_aliases
