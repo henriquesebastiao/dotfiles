@@ -120,14 +120,14 @@
       become: yes
       shell: command -v zsh >/dev/null || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     
-    - name: Instalar Spaceship Prompt (idempotente)
-      ansible.builtin.shell: |
-        command -v git >/dev/null && \
-        [ -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt" ] || \
-        git clone https://github.com/spaceship-prompt/spaceship-prompt.git \
-        "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt" --depth=1
-      args:
-        executable: /bin/bash
+    - name: Instalação Spaceship Prompt
+      become: yes
+      shell: |
+        if command -v git >/dev/null && \
+           [ ! -d "$ZSH_CUSTOM/themes/spaceship-prompt" ]; then
+          git clone https://github.com/spaceship-prompt/spaceship-prompt.git \
+          "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+        fi
     
     - name: Configuração Spaceship Prompt
       become: yes
