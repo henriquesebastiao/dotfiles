@@ -1,0 +1,30 @@
+---
+- name: Pcotes AUR
+  hosts: localhost
+
+  tasks:
+    - name: Instalação yay
+      kewlfft.aur.aur:
+        name: yay-bin
+        state: present
+        use: makepkg
+
+    - name: Instalação dotdrop
+      kewlfft.aur.aur:
+        use: yay
+        name: dotdrop
+        state: present
+
+    # - name: Ajusta dotdrop para nome do host
+    #   shell: sed -i 's/melville/archlinux/' /home/vagrant/dotfiles/config.yaml
+    #   # TODO: Ajustar isso
+
+    # - name: configura dotfiles
+    #   shell: dotdrop --cfg=/home/vagrant/dotfiles/config.yaml install -f
+    #   # TODO: Ajustar isso
+
+    # - name: Instalação waterfox (paru)
+    #   kewlfft.aur.aur:
+    #     use: paru
+    #     name: waterfox-bin
+    #     state: present

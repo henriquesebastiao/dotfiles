@@ -1,0 +1,124 @@
+---
+- name: Instalação inicial do sistema
+  hosts: localhost
+
+
+  tasks:
+    - name: Instalação devel
+      become: yes
+      package:
+        name: base-devel
+        state: present
+
+    - name: Instalação cmake
+      become: yes
+      package:
+        name: cmake
+        state: present
+
+    - name: Instalação git
+      become: yes
+      package:
+        name: git
+        state: present
+
+    - name: Instalação nano
+      become: yes
+      package:
+        name: nano
+        state: present
+
+    - name: Instalação eza
+      become: yes
+      package:
+        name: eza  # ls com formato de árvore com `eza -T`
+        state: present
+
+    - name: Instalação bat
+      become: yes
+      package:
+        name: bat  # cat com número de linhas e cores
+        state: present
+
+    - name: Cópia dotfiles
+      git:
+        repo: https://github.com/henriquesebastiao/dotfiles.git
+        dest: dotfiles
+
+    - name: chown dotfiles
+      become: yes
+      shell: chown -R vagrant:vagrant .
+      # TODO: Ajustar isso
+
+    - name: Instalação pipewire
+      become: yes
+      package:
+        name: pipewire
+        state: present
+
+    - name: Instalação pipewire-alsa
+      become: yes
+      package:
+        name: pipewire-alsa
+        state: present
+
+    - name: Instalação pipewire-pulse
+      become: yes
+      package:
+        name: pipewire-pulse
+        state: present
+
+    - name: Instalação pipewire-jack
+      become: yes
+      package:
+        name: pipewire-jack
+        state: present
+
+    - name: Ativando pipewire
+      become: yes
+      become_user: vagrant
+      ansible.builtin.systemd_service:
+        name: pipewire
+        enabled: true
+        scope: user
+
+    - name: Instalação networkmanager
+      become: yes
+      package:
+        name: networkmanager
+        state: present
+
+    - name: Instalação network-manager-applet
+      become: yes
+      package:
+        name: network-manager-applet
+        state: present
+
+    - name: Ativando NetworkManager
+      become: yes
+      ansible.builtin.systemd_service:
+        name: NetworkManager
+        enabled: true
+
+    - name: Instalação terminator
+      become: yes
+      package:
+        name: terminator
+        state: present
+
+    - name: Instalação zsh
+      become: yes
+      package:
+        name: zsh
+        state: present
+
+    - name: Configuração zsh
+      become: yes
+      shell: chsh -s /usr/bin/zsh vagrant
+      # TODO: Ajustar isso
+
+    - name: Instalação bpytop
+      become: yes
+      package:
+        name: bpytop
+        state: present

@@ -25,6 +25,7 @@ alias weather="curl 'https://wttr.in/Aripuana?lang=pt'" # Previsão do tempo
 alias ipp="curl https://api.ipify.org" # IP Público
 alias aliases="cat ~/.aliases"
 alias ls="lsd"
+alias lst="eza -T"
 alias dotcommit="git commit -m 'update: $(date -u +"%Y-%m-%d %H:%M:%S %Z")'"
 
 # Ubuntu
@@ -32,6 +33,10 @@ alias apts="apt search"
 
 # Obsidian
 alias obcommit="git commit -m 'vault backup: $(date -u +"%Y-%m-%d %H:%M:%S %Z")'"
+
+# Tailscale
+alias tailup="sudo tailscale up --accept-dns --accept-routes"
+alias taildown="sudo tailscale down"
 
 # Aliases
 alias cl="clear"

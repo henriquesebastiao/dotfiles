@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  tasks:
+    - ansible.builtin.debug:
+        msg: play1
+
+- name: aur
+  import_playbook: aur.yml
+
+# - name: audio
+#   import_playbook: audio.yml
+
+# - name: coding
+#   import_playbook: coding.yml
+
+# - name: python
+#   import_playbook: python.yml
+
+# - name: gui
+#   import_playbook: gui.yml
+
+# - name: work
+#   import_playbook: work.yml
