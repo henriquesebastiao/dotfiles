@@ -3,21 +3,21 @@
   hosts: localhost
 
   tasks:
-    - name: Instalação yay
+    - name: Instalação paru
       kewlfft.aur.aur:
-        name: yay-bin
+        name: paru-bin
         state: present
         use: makepkg
 
     - name: Instalação dotdrop
       kewlfft.aur.aur:
-        use: yay
+        use: paru
         name: dotdrop
         state: present
     
     - name: Instalação neofetch
       kewlfft.aur.aur:
-        use: yay
+        use: paru
         name: neofetch
         state: present
 
