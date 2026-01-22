@@ -131,7 +131,11 @@
     
     - name: Configuração Spaceship Prompt
       become: yes
-      shell: ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+      shell: |
+        if [ ! -L "$ZSH_CUSTOM/themes/spaceship.zsh-theme" ]; then
+          ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" \
+                "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+        fi
     
     - name: Instalação plugins do ZSH
       become: yes
