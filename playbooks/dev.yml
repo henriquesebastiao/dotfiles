@@ -102,3 +102,27 @@
       package:
         name: binwalk  # Ferramenta para análise de firmwares
         state: present
+    
+    - name: Instalação esptool
+      become: yes
+      package:
+        name: esptool  # Ferramenta para lidar com firmwares em microcontroladores Espressif
+        state: present
+    
+    - name: Instalação jupyter-notebook
+      become: yes
+      package:
+        name: jupyter-notebook
+        state: present
+    
+    - name: Instalação share-preview
+      become: yes
+      package:
+        name: share-preview
+        state: present
+    
+    - name: Instalação twine
+      become: yes
+      package:
+        name: twine  # Utilities for interacting with PyPI -> https://github.com/pypa/twine
+        state: present

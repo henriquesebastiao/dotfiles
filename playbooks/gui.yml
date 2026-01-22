@@ -39,6 +39,12 @@
         name: torbrowser-launcher
         state: present
     
+    - name: Instalação nyx
+      become: yes
+      package:
+        name: nyx  # Ferrameta para monitorar status do TOR
+        state: present
+    
     - name: Instalação virtualbox
       become: yes
       package:
@@ -60,6 +66,12 @@
         name: wireshark-qt
         state: present
     
+    - name: Instalação virtualbox-guest-iso
+      become: yes
+      package:
+        name: virtualbox-guest-iso
+        state: present
+    
     - name: Instalação obsidian
       become: yes
       package:
@@ -70,5 +82,29 @@
       become: yes
       package:
         name: helvum  # GTK patchbay for PipeWire
+        state: present
+    
+    - name: Instalação collision
+      become: yes
+      package:
+        name: collision  # Para verificar hashes de arquivos
+        state: present
+    
+    - name: Instalação eyedropper
+      become: yes
+      package:
+        name: eyedropper
+        state: present
+    
+    - name: Instalação gparted
+      become: yes
+      package:
+        name: gparted
+        state: present
+    
+    - name: Instalação telegram-desktop
+      become: yes
+      package:
+        name: telegram-desktop
         state: present
         

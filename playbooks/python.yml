@@ -14,3 +14,7 @@
     - name: Install mkx
       community.general.pipx:
         name: mkx
+    
+    - name: Install smokeshow
+      community.general.pipx:
+        name: smokeshow  # Coverage badge (Samuel Colvin) -> https://github.com/samuelcolvin/smokeshow

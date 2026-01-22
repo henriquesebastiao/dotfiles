@@ -94,6 +94,26 @@
       become: yes
       become_user: aur_builder
     
+    - name: Instalação gnome-shell-extension-arch-update
+      kewlfft.aur.aur:
+        use: yay
+        name: gnome-shell-extension-arch-update
+        state: present
+      become: yes
+      become_user: aur_builder
+    
     - name: Habilita extensão clipboard-indicator
       become: yes
       shell: gnome-extensions enable clipboard-indicator@tudmotu.com
+    
+    - name: Habilita extensão arch-update
+      become: yes
+      shell: gnome-extensions enable arch-update@RaphaelRochet
+    
+    - name: Instalação localsend-bin
+      kewlfft.aur.aur:
+        use: yay
+        name: localsend-bin
+        state: present
+      become: yes
+      become_user: aur_builder
