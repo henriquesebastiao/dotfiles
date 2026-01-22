@@ -139,11 +139,29 @@
     
     - name: Instalação plugins do ZSH
       become: yes
-      shell: git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-syntax-highlighting
+      shell: |
+        if command -v git >/dev/null && \
+           [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
+          git clone https://github.com/zsh-users/zsh-autosuggestions \
+            "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+        fi
+        
+        if command -v git >/dev/null && \
+           [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
+          git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+            "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+        fi
   
     - name: Configuração de fontes para funcionamento correto com Spaceship Prompt
       become: yes
-      shell: mkdir -p ~/.fonts && git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf && fc-cache -vf
+      shell: |
+        mkdir -p ~/.fonts
+        
+        if [ ! -d ~/.fonts/ubuntu-mono-powerline-ttf ]; then
+            git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
+        fi
+        
+        fc-cache -vf
 
     - name: Instalação bpytop
       become: yes
