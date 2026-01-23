@@ -9,5 +9,6 @@
 		"frame": true,
 		"screenLayout": "0:180:1366:768-1366:0:2560:1080",
 		"backgroundColor": "rgb(31, 39, 42)"
-	}
+	},
+	"workspaces": []
 }
