@@ -1,0 +1,224 @@
+<opml version="2.0">
+  <head>
+    <title>
+      NewsFlash OPML export
+    </title>
+  </head>
+  <body>
+    <outline text="Astronomia" title="Astronomia">
+      <outline text="ALMA Observatory"
+        type="rss"
+        xmlUrl="https://www.almaobservatory.org/en/feed/"
+        htmlUrl="https://www.almaobservatory.org/"
+        title="ALMA Observatory" />
+      <outline text="ESO"
+        type="rss"
+        xmlUrl="https://www.eso.org/public/portugal/news/feed/"
+        htmlUrl="https://www.eso.org/public/news/"
+        title="ESO" />
+      <outline text="James Webb Space Telescope"
+        type="rss"
+        xmlUrl="https://blogs.nasa.gov/webb/feed/"
+        htmlUrl="https://blogs.nasa.gov/webb"
+        title="James Webb Space Telescope" />
+      <outline text="Watch the Skies - NASA"
+        type="rss"
+        xmlUrl="https://www.nasa.gov/blogs/watch-the-skies/feed/"
+        htmlUrl="https://www.nasa.gov/"
+        title="Watch the Skies - NASA" />
+    </outline>
+    <outline text="Blogs" title="Blogs">
+      <outline text="Blog do Dunossauro"
+        type="rss"
+        xmlUrl="https://blog.dunossauro.com/feed.xml"
+        htmlUrl="https://blog.dunossauro.com/"
+        title="Blog do Dunossauro" />
+      <outline text="Luiz Yassuda"
+        type="rss"
+        xmlUrl="https://luizyassuda.com/feed/"
+        htmlUrl="https://luizyassuda.com/"
+        title="Luiz Yassuda" />
+      <outline text="Meme de Carbono"
+        type="rss"
+        xmlUrl="https://www.memedecarbono.com.br/feed/"
+        htmlUrl="https://www.memedecarbono.com.br/"
+        title="Meme de Carbono" />
+      <outline text="This Week in the IndieWeb"
+        type="rss"
+        xmlUrl="https://indieweb.org/this-week/feed.xml"
+        htmlUrl="https://indieweb.org/this-week"
+        title="This Week in the IndieWeb" />
+    </outline>
+    <outline text="Desenvolvimento" title="Desenvolvimento">
+      <outline text="Newest Python PEPs"
+        type="rss"
+        xmlUrl="https://peps.python.org/peps.rss/"
+        htmlUrl="https://peps.python.org/"
+        title="Newest Python PEPs" />
+      <outline text="PyPy" type="rss" xmlUrl="https://pypy.org/rss.xml" htmlUrl="https://www.pypy.org/" title="PyPy" />
+      <outline text="Python Insider"
+        type="rss"
+        xmlUrl="https://blog.python.org/feeds/posts/default?alt=rss"
+        htmlUrl="https://pythoninsider.blogspot.com/"
+        title="Python Insider" />
+      <outline text="Python Software Foundation News"
+        type="rss"
+        xmlUrl="https://pyfound.blogspot.com/feeds/posts/default"
+        htmlUrl="https://www.blogger.com/feeds/8520/posts/default?start-index=26&amp;max-results=25"
+        title="Python Software Foundation News" />
+      <outline text="The Python Package Index Blog"
+        type="rss"
+        xmlUrl="https://blog.pypi.org/feed_rss_created.xml"
+        htmlUrl="https://blog.pypi.org/"
+        title="The Python Package Index Blog" />
+    </outline>
+    <outline text="Podcasts" title="Podcasts">
+      <outline text="Naruhodo"
+        type="rss"
+        xmlUrl="https://www.b9.com.br/shows/naruhodo/feed/"
+        htmlUrl="https://www.b9.com.br/shows/naruhodo/"
+        title="Naruhodo" />
+      <outline text="Não me entenda mal"
+        type="rss"
+        xmlUrl="https://feeds.libsyn.com/556337/rss"
+        htmlUrl="https://sites.libsyn.com/556337"
+        title="Não me entenda mal" />
+      <outline text="O Alvissareiro"
+        type="rss"
+        xmlUrl="https://www.spreaker.com/show/5920998/episodes/feed"
+        htmlUrl="https://www.spreaker.com/podcast/o-alvissareiro--5920998"
+        title="O Alvissareiro" />
+      <outline text="Xadrez Verbal"
+        type="rss"
+        xmlUrl="https://feeds.feedburner.com/XadrezVerbal"
+        htmlUrl="https://xadrezverbal.com/"
+        title="Xadrez Verbal" />
+    </outline>
+    <outline text="Releases" title="Releases">
+      <outline text="AntennaPod"
+        type="rss"
+        xmlUrl="https://github.com/AntennaPod/AntennaPod/releases.atom"
+        htmlUrl="https://github.com/AntennaPod/AntennaPod/releases"
+        title="AntennaPod" />
+      <outline text="capyreader"
+        type="rss"
+        xmlUrl="https://github.com/jocmp/capyreader/releases.atom"
+        htmlUrl="https://github.com/jocmp/capyreader/releases"
+        title="capyreader" />
+      <outline text="Cryptography"
+        type="rss"
+        xmlUrl="https://github.com/pyca/cryptography/tags.atom"
+        htmlUrl="https://github.com/pyca/cryptography/releases"
+        title="Cryptography" />
+      <outline text="Django"
+        type="rss"
+        xmlUrl="https://github.com/django/django/tags.atom"
+        htmlUrl="https://github.com/django/django/releases"
+        title="Django" />
+      <outline text="Easypanel Releases"
+        type="rss"
+        xmlUrl="https://feedback.easypanel.io/api/changelog/feed.rss"
+        htmlUrl="https://feedback.easypanel.io/"
+        title="Easypanel Releases" />
+      <outline text="FastAPI"
+        type="rss"
+        xmlUrl="https://github.com/fastapi/fastapi/releases.atom"
+        htmlUrl="https://github.com/fastapi/fastapi/releases"
+        title="FastAPI" />
+      <outline text="Jekyll Chirpy Theme"
+        type="rss"
+        xmlUrl="https://github.com/cotes2020/jekyll-theme-chirpy/releases.atom"
+        htmlUrl="https://github.com/cotes2020/jekyll-theme-chirpy/releases"
+        title="Jekyll Chirpy Theme" />
+      <outline text="MikroTik Releases"
+        type="rss"
+        xmlUrl="https://download.mikrotik.com/routeros/latest-stable-and-long-term.rss"
+        htmlUrl="https://mikrotik.com/download"
+        title="MikroTik Releases" />
+      <outline text="Poetry"
+        type="rss"
+        xmlUrl="https://github.com/python-poetry/poetry/releases.atom"
+        htmlUrl="https://github.com/python-poetry/poetry/releases"
+        title="Poetry" />
+      <outline text="Pydantic"
+        type="rss"
+        xmlUrl="https://github.com/pydantic/pydantic/releases.atom"
+        htmlUrl="https://github.com/pydantic/pydantic/releases"
+        title="Pydantic" />
+      <outline text="PyTest"
+        type="rss"
+        xmlUrl="https://github.com/pytest-dev/pytest/releases.atom"
+        htmlUrl="https://github.com/pytest-dev/pytest/releases"
+        title="PyTest" />
+      <outline text="Typer"
+        type="rss"
+        xmlUrl="https://github.com/fastapi/typer/releases.atom"
+        htmlUrl="https://github.com/fastapi/typer/releases"
+        title="Typer" />
+    </outline>
+    <outline text="Sem categoria" title="Sem categoria">
+      <outline text="FreshRSS releases"
+        type="rss"
+        xmlUrl="https://github.com/FreshRSS/FreshRSS/releases.atom"
+        htmlUrl="https://github.com/FreshRSS/FreshRSS/"
+        title="FreshRSS releases" />
+    </outline>
+    <outline text="YouTube" title="YouTube">
+      <outline text="Atila Lamarino"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCSTlOTcyUmzvhQi6F8lFi5w"
+        htmlUrl="https://www.youtube.com/channel/UCSTlOTcyUmzvhQi6F8lFi5w"
+        title="Atila Lamarino" />
+      <outline text="Ben Eater"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA"
+        htmlUrl="https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA"
+        title="Ben Eater" />
+      <outline text="Brincando com Ideias"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCcGk83PAQ5aGR7IVlD_cBaw"
+        htmlUrl="https://www.youtube.com/channel/UCcGk83PAQ5aGR7IVlD_cBaw"
+        title="Brincando com Ideias" />
+      <outline text="Daniel Romero"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCQQNn842GN-Jh4GaK0WcGuA"
+        htmlUrl="https://www.youtube.com/channel/UCQQNn842GN-Jh4GaK0WcGuA"
+        title="Daniel Romero" />
+      <outline text="Diolinux"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA"
+        htmlUrl="https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA"
+        title="Diolinux" />
+      <outline text="Eduardo Mendes"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCAaKeg-BocRqphErdtIUFFw"
+        htmlUrl="https://www.youtube.com/channel/UCAaKeg-BocRqphErdtIUFFw"
+        title="Eduardo Mendes" />
+      <outline text="Fabio Akita"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCib793mnUOhWymCh2VJKplQ"
+        htmlUrl="https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ"
+        title="Fabio Akita" />
+      <outline text="infinitamente"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCqNBcXkVNrotGBQZmE3Hyaw"
+        htmlUrl="https://www.youtube.com/channel/UCqNBcXkVNrotGBQZmE3Hyaw"
+        title="infinitamente" />
+      <outline text="Julio Lobo"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCcw2dzrBBmt4HriBCg_iLng"
+        htmlUrl="https://www.youtube.com/channel/UCcw2dzrBBmt4HriBCg_iLng"
+        title="Julio Lobo" />
+      <outline text="melodysheep"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCR9sFzaG9Ia_kXJhfxtFMBA"
+        htmlUrl="https://www.youtube.com/channel/UCR9sFzaG9Ia_kXJhfxtFMBA"
+        title="melodysheep" />
+      <outline text="Sobrevivencialismo"
+        type="rss"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UClQfWNWk9UsUj317ce5FtXg"
+        htmlUrl="https://www.youtube.com/channel/UClQfWNWk9UsUj317ce5FtXg"
+        title="Sobrevivencialismo" />
+    </outline>
+  </body>
+</opml>

@@ -130,6 +130,15 @@ dotfiles:
   f_user.conf:
     src: anydesk/user.conf
     dst: ~/.anydesk/user.conf
+  f_freshrss.json:
+    src: config/news-flash/freshrss.json
+    dst: ~/.config/news-flash/freshrss.json
+  f_newsflash.json:
+    src: config/news-flash/newsflash.json
+    dst: ~/.config/news-flash/newsflash.json
+  f_newsflash_gtk.json:
+    src: config/news-flash/newsflash_gtk.json
+    dst: ~/.config/news-flash/newsflash_gtk.json
 profiles:
   archlinux:
     dotfiles:
@@ -170,6 +179,9 @@ profiles:
     - f_bashrc
     - f_system.conf
     - f_user.conf
+    - f_freshrss.json
+    - f_newsflash.json
+    - f_newsflash_gtk.json
   homelab:
     dotfiles:
     - f_config.toml
