@@ -113,6 +113,14 @@ dotfiles:
   f_vbox.cfg:
     src: etc/vbox/vbox.cfg
     dst: /etc/vbox/vbox.cfg
+  f_config.json:
+    src: config/arduino-ide/config.json
+    dst: ~/.config/arduino-ide/config.json
+    chmod: '666'
+  f_preferences:
+    src: config/arduino-ide/Preferences
+    dst: ~/.config/arduino-ide/Preferences
+    chmod: '600'
 profiles:
   archlinux:
     dotfiles:
@@ -148,6 +156,8 @@ profiles:
     - f_makepkg.conf
     - f_torrc
     - f_vbox.cfg
+    - f_config.json
+    - f_preferences
   homelab:
     dotfiles:
     - f_config.toml
