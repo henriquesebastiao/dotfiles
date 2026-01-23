@@ -124,6 +124,12 @@ dotfiles:
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
+  f_system.conf:
+    src: anydesk/system.conf
+    dst: ~/.anydesk/system.conf
+  f_user.conf:
+    src: anydesk/user.conf
+    dst: ~/.anydesk/user.conf
 profiles:
   archlinux:
     dotfiles:
@@ -162,6 +168,8 @@ profiles:
     - f_config.json
     - f_preferences
     - f_bashrc
+    - f_system.conf
+    - f_user.conf
   homelab:
     dotfiles:
     - f_config.toml
