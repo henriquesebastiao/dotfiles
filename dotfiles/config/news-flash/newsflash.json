@@ -1,6 +1,0 @@
-{
-  "backend": "freshrss",
-  "concurrent_downlaods": 24,
-  "sync_amount": 300,
-  "last_sync": "2026-01-23T15:20:26.492174748+00:00"
-}
