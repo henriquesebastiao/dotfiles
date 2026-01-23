@@ -15,3 +15,6 @@
 
 - name: gui
   import_playbook: gui.yml
+
+- name: latex
+  import_playbook: latex.yml

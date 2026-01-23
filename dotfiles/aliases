@@ -40,3 +40,6 @@ alias taildown="sudo tailscale down"
 
 # Aliases
 alias cl="clear"
+
+# AnyDesk
+alias anydesk="~/Apps/anydesk-7.1.2/anydesk"
