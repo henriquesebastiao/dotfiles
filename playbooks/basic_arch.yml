@@ -322,3 +322,9 @@
     - name: Habilita o repositório multilib
       become: yes
       shell: sudo sed -i '/\[multilib\]/,/Include/s/^#//' /etc/pacman.conf && sudo pacman -Syu
+    
+    - name: Instalação dosfstools
+      become: yes
+      package:
+        name: dosfstools # DOS filesystem utilities (FAT)
+        state: present
