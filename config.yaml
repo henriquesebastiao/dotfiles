@@ -121,6 +121,9 @@ dotfiles:
     src: config/arduino-ide/Preferences
     dst: ~/.config/arduino-ide/Preferences
     chmod: '600'
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
 profiles:
   archlinux:
     dotfiles:
@@ -158,6 +161,7 @@ profiles:
     - f_vbox.cfg
     - f_config.json
     - f_preferences
+    - f_bashrc
   homelab:
     dotfiles:
     - f_config.toml
