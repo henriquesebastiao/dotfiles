@@ -117,3 +117,11 @@
         state: present
       become: yes
       become_user: aur_builder
+  
+    - name: Instalação sublime-text-3
+      kewlfft.aur.aur:
+        use: yay
+        name: sublime-text-3
+        state: present
+      become: yes
+      become_user: aur_builder
