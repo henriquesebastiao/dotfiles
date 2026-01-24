@@ -27,9 +27,6 @@ alias aliases="cat ~/.aliases"
 alias ls="lsd"
 alias lst="eza -T"
 
-# Dotdrop
-alias dotcommit="git commit -m 'update: $(date -u +"%Y-%m-%d %H:%M:%S %Z")'"
-
 # Obsidian
 alias obcommit="git commit -m 'vault backup: $(date -u +"%Y-%m-%d %H:%M:%S %Z")'"
 

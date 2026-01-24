@@ -6,3 +6,6 @@ install:
 
 compare:
 	dotdrop compare --profile=archlinux
+
+commit:
+    git commit -m "update: $(date -u +"%Y-%m-%d %H:%M:%S %Z")"

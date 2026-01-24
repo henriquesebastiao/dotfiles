@@ -328,3 +328,9 @@
       package:
         name: dosfstools # DOS filesystem utilities (FAT)
         state: present
+    
+    - name: Instalação ranger
+      become: yes
+      package:
+        name: ranger # Gerenciador de arquivos em terminal
+        state: present
