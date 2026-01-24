@@ -40,3 +40,6 @@ alias cl="clear"
 
 # AnyDesk
 alias anydesk="~/Apps/anydesk-7.1.2/anydesk"
+
+# Gerar licensas
+alias license-gpl3="cat ~/.etc/licenses/gpl-3 > LICENSE"
