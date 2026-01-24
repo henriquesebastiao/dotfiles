@@ -125,3 +125,11 @@
         state: present
       become: yes
       become_user: aur_builder
+    
+    - name: Instalação google-java-format
+      kewlfft.aur.aur:
+        use: yay
+        name: google-java-format # Formatador de códigos Java
+        state: present
+      become: yes
+      become_user: aur_builder
