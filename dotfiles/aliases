@@ -26,6 +26,7 @@ alias ipp="curl https://api.ipify.org" # IP Público
 alias aliases="cat ~/.aliases"
 alias ls="lsd"
 alias lst="eza -T"
+alias fetch="neofetch"
 
 # Obsidian
 alias obcommit="git commit -m 'vault backup: $(date -u +"%Y-%m-%d %H:%M:%S %Z")'"

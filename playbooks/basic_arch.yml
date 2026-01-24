@@ -334,3 +334,9 @@
       package:
         name: ranger # Gerenciador de arquivos em terminal
         state: present
+    
+    - name: Instalação speedtest-cli
+      become: yes
+      package:
+        name: speedtest-cli
+        state: present
