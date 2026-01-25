@@ -346,3 +346,9 @@
       package:
         name: speedtest-cli # Ferramenta de terminal para interagir com os serviços do Systemd e seus logs
         state: present
+    
+    - name: Instalação python-pillow
+      become: yes
+      package:
+        name: python-pillow
+        state: present
