@@ -27,6 +27,12 @@
         name: gemini-cli
         state: present
     
+    - name: Instalação docker-compose
+      become: yes
+      package:
+        name: docker-compose
+        state: present
+    
     - name: Instalação github-cli
       become: yes
       package:
