@@ -138,3 +138,9 @@
       package:
         name: intellij-idea-community-edition
         state: present
+        
+    - name: Instalação prettier
+      become: yes
+      package:
+        name: prettier
+        state: present
