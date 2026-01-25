@@ -113,3 +113,9 @@
     
     - name: Adiciona atalhos ao nautilus
       shell: echo "file:///home/$USER/git git" >>~/.config/gtk-3.0/bookmarks && echo "file:///home/$USER/.temp .temp" >>~/.config/gtk-3.0/bookmarks
+    
+    - name: Instalação solanum
+      become: yes
+      package:
+        name: solanum # Pomodoro
+        state: present
