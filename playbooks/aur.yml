@@ -133,3 +133,11 @@
         state: present
       become: yes
       become_user: aur_builder
+      
+    - name: Instalação google-chrome
+      kewlfft.aur.aur:
+        use: yay
+        name: google-chrome # Para executar testes funcionais com chromedrive
+        state: present
+      become: yes
+      become_user: aur_builder
