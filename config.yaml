@@ -61,9 +61,6 @@ dotfiles:
   f_netconfig:
     src: etc/netconfig
     dst: /etc/netconfig
-  f_resolv.conf:
-    src: etc/resolv.conf
-    dst: /etc/resolv.conf
   f_00-keyboard.conf:
     src: etc/X11/xorg.conf.d/00-keyboard.conf
     dst: /etc/X11/xorg.conf.d/00-keyboard.conf
@@ -155,7 +152,6 @@ profiles:
     - f_locale.gen
     - f_nanorc
     - f_netconfig
-    - f_resolv.conf
     - f_00-keyboard.conf
     - f_10-monitors.conf
     - f_aliases
