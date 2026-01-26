@@ -1,56 +1,46 @@
----
 - name: Instalação de ferramentas latex
   hosts: localhost
-
-  tasks:      
+  tasks:
     - name: Instalação texlive-bin
       become: yes
       package:
         name: texlive-bin
         state: present
-
     - name: Instalação texlive-binextra
       become: yes
       package:
         name: texlive-binextra
         state: present
-    
     - name: Instalação texlive-xetex
       become: yes
       package:
         name: texlive-xetex
         state: present
-    
     - name: Instalação texlive-fontsextra
       become: yes
       package:
         name: texlive-fontsextra
         state: present
-    
     - name: Instalação texlive-fontsrecommended
       become: yes
       package:
         name: texlive-fontsrecommended
         state: present
-    
     - name: Instalação texlive-publishers
       become: yes
       package:
         name: texlive-publishers # Estilos de publicação, teses, etc.
         state: present
-    
     - name: Instalação texlive-plaingeneric
       become: yes
       package:
         name: texlive-plaingeneric # Pacotes extras para latex
         state: present
-    
     - name: Instalação texlive-bibtexextra
       become: yes
       package:
         name: texlive-bibtexextra
         state: present
-    
     - name: Instalação texlive-latexextra
       become: yes
       package:

@@ -9,3 +9,13 @@ compare:
 
 commit:
 	git commit -m "update: $$(date -u +"%Y-%m-%d %H:%M:%S %Z")"
+
+lint:
+	yamlfmt -lint .
+	mbake format --check Makefile
+
+format:
+	yamlfmt .
+	mbake format Makefile
+
+.PHONY: update install commit compare lint format

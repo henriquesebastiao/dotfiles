@@ -1,119 +1,97 @@
----
 - name: Instalação dos programas com GUI
   hosts: localhost
-
   tasks:
     - name: Instalação bitwarden
       become: yes
       package:
         name: bitwarden
         state: present
-    
     - name: Instalação discord
       become: yes
       package:
         name: discord
         state: present
-    
     - name: Instalação filezilla
       become: yes
       package:
         name: filezilla
         state: present
-    
     - name: Instalação newsflash
       become: yes
       package:
         name: newsflash
         state: present
-    
     - name: Instalação tor
       become: yes
       package:
         name: tor
         state: present
-    
     - name: Instalação torbrowser-launcher
       become: yes
       package:
         name: torbrowser-launcher
         state: present
-    
     - name: Instalação nyx
       become: yes
       package:
-        name: nyx  # Ferrameta para monitorar status do TOR
+        name: nyx # Ferrameta para monitorar status do TOR
         state: present
-    
     - name: Instalação virtualbox
       become: yes
       package:
         name: virtualbox
         state: present
-    
     - name: Instalação virtualbox-host-modules-arch
       become: yes
       package:
         name: virtualbox-host-modules-arch
         state: present
-    
     - name: Prepara virtualbox
       shell: sudo modprobe vboxdrv && sudo modprobe vboxnetadp && sudo modprobe vboxnetflt && sudo modprobe -r kvm_intel
-    
     - name: Instalação wireshark-qt
       become: yes
       package:
         name: wireshark-qt
         state: present
-    
     - name: Instalação virtualbox-guest-iso
       become: yes
       package:
         name: virtualbox-guest-iso
         state: present
-    
     - name: Instalação obsidian
       become: yes
       package:
         name: obsidian
         state: present
-    
     - name: Instalação helvum
       become: yes
       package:
-        name: helvum  # GTK patchbay for PipeWire
+        name: helvum # GTK patchbay for PipeWire
         state: present
-    
     - name: Instalação collision
       become: yes
       package:
-        name: collision  # Para verificar hashes de arquivos
+        name: collision # Para verificar hashes de arquivos
         state: present
-    
     - name: Instalação eyedropper
       become: yes
       package:
         name: eyedropper
         state: present
-    
     - name: Instalação gparted
       become: yes
       package:
         name: gparted
         state: present
-    
     - name: Instalação telegram-desktop
       become: yes
       package:
         name: telegram-desktop
         state: present
-    
     - name: Criando pastas
       shell: mkdir -p ~/git && mkdir -p ~/.temp
-    
     - name: Adiciona atalhos ao nautilus
       shell: echo "file:///home/$USER/git git" >>~/.config/gtk-3.0/bookmarks && echo "file:///home/$USER/.temp .temp" >>~/.config/gtk-3.0/bookmarks
-    
     - name: Instalação solanum
       become: yes
       package:

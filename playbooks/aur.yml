@@ -1,7 +1,5 @@
----
 - name: Pcotes AUR
   hosts: localhost
-
   tasks:
     - name: Crie o usuário `aur_builder`
       become: yes
@@ -9,7 +7,6 @@
         name: aur_builder
         create_home: yes
         group: wheel
-    
     - name: Permitir que o usuário `aur_builder` execute `sudo pacman` sem senha.
       become: yes
       ansible.builtin.lineinfile:
@@ -18,7 +15,6 @@
         create: yes
         mode: 0644
         validate: 'visudo -cf %s'
-
     - name: Instalação yay
       kewlfft.aur.aur:
         name: yay-bin
@@ -26,7 +22,6 @@
         use: makepkg
       become: yes
       become_user: aur_builder
-
     - name: Instalação dotdrop
       kewlfft.aur.aur:
         use: yay
@@ -34,7 +29,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação neofetch
       kewlfft.aur.aur:
         use: yay
@@ -42,7 +36,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação anki-bin
       kewlfft.aur.aur:
         use: yay
@@ -50,7 +43,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação chirp-next
       kewlfft.aur.aur:
         use: yay
@@ -58,10 +50,8 @@
         state: present
       become: yes
       become_user: aur_builder
-
     - name: Configura dotfiles
       shell: dotdrop --cfg=/home/hick/dotfiles/config.yaml --profile=archlinux install -f
-
     - name: Instalação httpie-desktop-bin
       kewlfft.aur.aur:
         use: yay
@@ -69,7 +59,6 @@
         state: present
       become: yes
       become_user: aur_builder
-      
     - name: Instalação winbox
       kewlfft.aur.aur:
         use: yay
@@ -77,7 +66,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação arduino-ide-bin
       kewlfft.aur.aur:
         use: yay
@@ -85,7 +73,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação gnome-shell-extension-clipboard-indicator
       kewlfft.aur.aur:
         use: yay
@@ -93,7 +80,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação gnome-shell-extension-arch-update
       kewlfft.aur.aur:
         use: yay
@@ -101,15 +87,12 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Habilita extensão clipboard-indicator
       become: yes
       shell: gnome-extensions enable clipboard-indicator@tudmotu.com
-    
     - name: Habilita extensão arch-update
       become: yes
       shell: gnome-extensions enable arch-update@RaphaelRochet
-    
     - name: Instalação localsend-bin
       kewlfft.aur.aur:
         use: yay
@@ -117,7 +100,6 @@
         state: present
       become: yes
       become_user: aur_builder
-  
     - name: Instalação sublime-text-3
       kewlfft.aur.aur:
         use: yay
@@ -125,7 +107,6 @@
         state: present
       become: yes
       become_user: aur_builder
-    
     - name: Instalação google-java-format
       kewlfft.aur.aur:
         use: yay
@@ -133,11 +114,17 @@
         state: present
       become: yes
       become_user: aur_builder
-      
     - name: Instalação google-chrome
       kewlfft.aur.aur:
         use: yay
         name: google-chrome # Para executar testes funcionais com chromedrive
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação mbake
+      kewlfft.aur.aur:
+        use: yay
+        name: mbake
         state: present
       become: yes
       become_user: aur_builder

@@ -1,146 +1,130 @@
----
 - name: Instalação de ferramentas de desenvolvimento
   hosts: localhost
-
   tasks:
     - name: Instalação dbeaver
       become: yes
       package:
         name: dbeaver
         state: present
-
     - name: Instalação docker
       become: yes
       package:
         name: docker
         state: present
-    
     - name: Habilita o docker
       shell: sudo systemctl enable --now docker.service && sudo systemctl start docker.service
-    
     - name: Configura docker para executar sem sudo
       shell: sudo usermod -aG docker $USER && newgrp docker
-    
     - name: Instalação gemini-cli
       become: yes
       package:
         name: gemini-cli
         state: present
-    
     - name: Instalação docker-compose
       become: yes
       package:
         name: docker-compose
         state: present
-    
     - name: Instalação github-cli
       become: yes
       package:
         name: github-cli
         state: present
-    
     - name: Instalação just
       become: yes
       package:
         name: just
         state: present
-    
     - name: Instalação python-pipx
       become: yes
       package:
         name: python-pipx
         state: present
-    
     - name: Configuração pipx
       become: yes
       shell: pipx ensurepath
-    
     - name: Instalação python-poetry
       become: yes
       package:
         name: python-poetry
         state: present
-    
     - name: Instalação ruby
       become: yes
       package:
         name: ruby
         state: present
-    
     - name: Instalação ruby-bundler
       become: yes
       package:
         name: ruby-bundler
         state: present
-    
     - name: Instalação vagrant
       become: yes
       package:
         name: vagrant
         state: present
-    
     - name: Instalação zeal
       become: yes
       package:
-        name: zeal  # Documentação offline
+        name: zeal # Documentação offline
         state: present
-    
     - name: Instalação zed
       become: yes
       package:
         name: zed
         state: present
-
     - name: Instalação ipython
       become: yes
       package:
         name: ipython
         state: present
-    
     - name: Instalação arduino-cli
       become: yes
       package:
         name: arduino-cli
         state: present
-    
     - name: Instalação binwalk
       become: yes
       package:
-        name: binwalk  # Ferramenta para análise de firmwares
+        name: binwalk # Ferramenta para análise de firmwares
         state: present
-    
     - name: Instalação esptool
       become: yes
       package:
-        name: esptool  # Ferramenta para lidar com firmwares em microcontroladores Espressif
+        name: esptool # Ferramenta para lidar com firmwares em microcontroladores Espressif
         state: present
-    
     - name: Instalação jupyter-notebook
       become: yes
       package:
         name: jupyter-notebook
         state: present
-    
     - name: Instalação share-preview
       become: yes
       package:
         name: share-preview
         state: present
-    
     - name: Instalação twine
       become: yes
       package:
-        name: twine  # Utilities for interacting with PyPI -> https://github.com/pypa/twine
+        name: twine # Utilities for interacting with PyPI -> https://github.com/pypa/twine
         state: present
-    
     - name: Instalação intellij-idea-community-edition
       become: yes
       package:
         name: intellij-idea-community-edition
         state: present
-        
+    - name: Instalação pycharm-community-edition
+      become: yes
+      package:
+        name: pycharm-community-edition
+        state: present
     - name: Instalação prettier
       become: yes
       package:
         name: prettier
+        state: present
+    - name: Instalação yamlfmt
+      become: yes
+      package:
+        name: yamlfmt
         state: present

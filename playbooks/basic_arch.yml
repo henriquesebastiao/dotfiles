@@ -1,79 +1,65 @@
----
 - name: Instalação inicial do sistema
   hosts: localhost
-
-  tasks:      
+  tasks:
     - name: Instalação devel
       become: yes
       package:
         name: base-devel
         state: present
-
     - name: Instalação cmake
       become: yes
       package:
         name: cmake
         state: present
-
     - name: Instalação git
       become: yes
       package:
         name: git
         state: present
-
     - name: Instalação nano
       become: yes
       package:
         name: nano
         state: present
-
     - name: Instalação eza
       become: yes
       package:
-        name: eza  # ls com formato de árvore com `eza -T`
+        name: eza # ls com formato de árvore com `eza -T`
         state: present
-    
     - name: Instalação lsd
       become: yes
       package:
-        name: lsd  # ls com ícones
+        name: lsd # ls com ícones
         state: present
-
     - name: Instalação bat
       become: yes
       package:
-        name: bat  # cat com número de linhas e cores
+        name: bat # cat com número de linhas e cores
         state: present
-
     - name: Copia dotfiles
       git:
         repo: https://github.com/henriquesebastiao/dotfiles.git
         dest: dotfiles
-
     - name: Instalação pipewire
       become: yes
       package:
         name: pipewire
         state: present
-
     - name: Instalação pipewire-alsa
       become: yes
       package:
         name: pipewire-alsa
         state: present
-
     - name: Instalação pipewire-pulse
       become: yes
       package:
         name: pipewire-pulse
         state: present
-
     - name: Instalação pipewire-jack
       become: yes
       package:
         name: pipewire-jack
         state: present
-
     - name: Ativando pipewire
       become: yes
       become_user: hick
@@ -81,45 +67,37 @@
         name: pipewire
         enabled: true
         scope: user
-
     - name: Instalação networkmanager
       become: yes
       package:
         name: networkmanager
         state: present
-
     - name: Instalação network-manager-applet
       become: yes
       package:
         name: network-manager-applet
         state: present
-
     - name: Ativando NetworkManager
       become: yes
       ansible.builtin.systemd_service:
         name: NetworkManager
         enabled: true
-
     - name: Instalação ptyxis
       become: yes
       package:
-        name: ptyxis  # Emulador de terminal
+        name: ptyxis # Emulador de terminal
         state: present
-
     - name: Instalação zsh
       become: yes
       package:
         name: zsh
         state: present
-
     - name: Configuração zsh
       become: yes
       shell: chsh -s /bin/zsh hick
-    
     - name: Instalação Oh My Zsh
       become: yes
       shell: command -v zsh >/dev/null || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    
     - name: Instalação Spaceship Prompt
       become: yes
       shell: |
@@ -128,7 +106,6 @@
           git clone https://github.com/spaceship-prompt/spaceship-prompt.git \
           "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
         fi
-    
     - name: Configuração Spaceship Prompt
       become: yes
       shell: |
@@ -136,7 +113,6 @@
           ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" \
                 "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
         fi
-    
     - name: Instalação plugins do ZSH
       become: yes
       shell: |
@@ -145,208 +121,174 @@
           git clone https://github.com/zsh-users/zsh-autosuggestions \
             "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
         fi
-        
+
         if command -v git >/dev/null && \
            [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
           git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
             "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
         fi
-  
     - name: Configuração de fontes para funcionamento correto com Spaceship Prompt
       become: yes
       shell: |
         mkdir -p ~/.fonts
-        
+
         if [ ! -d ~/.fonts/ubuntu-mono-powerline-ttf ]; then
             git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
         fi
-        
-        fc-cache -vf
 
+        fc-cache -vf
     - name: Instalação bpytop
       become: yes
       package:
         name: bpytop
         state: present
-    
     - name: Instalação nmap
       become: yes
       package:
         name: nmap
         state: present
-    
     - name: Instalação ascii
       become: yes
       package:
         name: ascii
         state: present
-    
     - name: Instalação fuse2
       become: yes
       package:
         name: fuse2
         state: present
-    
     - name: Instalação fuse2fs
       become: yes
       package:
         name: fuse2fs
         state: present
-    
     - name: Instalação gnome-shell-extension-appindicator
       become: yes
       package:
         name: gnome-shell-extension-appindicator
         state: present
-    
     - name: Instalação gnome-shell-extension-caffeine
       become: yes
       package:
         name: gnome-shell-extension-caffeine
         state: present
-      
     - name: Habilitar uso de extensões no sistema
       become: yes
       shell: gsettings set org.gnome.shell disable-user-extensions false
-    
     - name: Habilita extensão appindicator
       become: yes
       shell: gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
-    
     - name: Habilita extensão caffeine
       become: yes
       shell: gnome-extensions enable caffeine@patapon.info
-
     - name: Instalação htop
       become: yes
       package:
         name: htop
         state: present
-    
     - name: Instalação tailscale
       become: yes
       package:
         name: tailscale
         state: present
-    
     - name: Instalação ttf-jetbrains-mono-nerd
       become: yes
       package:
         name: ttf-jetbrains-mono-nerd
         state: present
-
     - name: Instalação ttf-dejavu
       become: yes
       package:
         name: ttf-dejavu
         state: present
-    
     - name: Instalação noto-fonts
       become: yes
       package:
         name: noto-fonts
         state: present
-    
     - name: Instalação noto-fonts-emoji
       become: yes
       package:
         name: noto-fonts-emoji
         state: present
-    
     - name: Instalação noto-fonts-extra
       become: yes
       package:
         name: noto-fonts-extra
         state: present
-    
     - name: Instalação ttf-liberation
       become: yes
       package:
         name: ttf-liberation
         state: present
-    
     - name: Instalação foremost
       become: yes
       package:
-        name: foremost  # Ferramenta para recuperação de arquivos
+        name: foremost # Ferramenta para recuperação de arquivos
         state: present
-    
     - name: Instalação knockd
       become: yes
       package:
-        name: knockd  # Port-knock
+        name: knockd # Port-knock
         state: present
-    
     - name: Instalação ncdu
       become: yes
       package:
-        name: ncdu  # Utilitário para análise de uso de disco
+        name: ncdu # Utilitário para análise de uso de disco
         state: present
-    
     - name: Instalação raider
       become: yes
       package:
-        name: raider  # Ferramenta para excluir arquivos permanentemente
+        name: raider # Ferramenta para excluir arquivos permanentemente
         state: present
-    
     - name: Instalação traceroute
       become: yes
       package:
         name: traceroute
         state: present
-    
     - name: Instalação whois
       become: yes
       package:
         name: whois
         state: present
-    
     - name: Instalação inetutils
       become: yes
       package:
         name: inetutils # Utilitários de rede GNU (Telnet)
         state: present
-    
     - name: Instalação man-db
       become: yes
       package:
         name: man-db # Utilitário para visualizar manual
         state: present
-    
     - name: Instalação man-pages
       become: yes
       package:
         name: man-pages # Páginas de manual
         state: present
-
     - name: Habilita o repositório multilib
       become: yes
       shell: sudo sed -i '/\[multilib\]/,/Include/s/^#//' /etc/pacman.conf && sudo pacman -Syu
-    
     - name: Instalação dosfstools
       become: yes
       package:
         name: dosfstools # DOS filesystem utilities (FAT)
         state: present
-    
     - name: Instalação ranger
       become: yes
       package:
         name: ranger # Gerenciador de arquivos em terminal
         state: present
-    
     - name: Instalação speedtest-cli
       become: yes
       package:
         name: speedtest-cli
         state: present
-    
     - name: Instalação speedtest-cli
       become: yes
       package:
         name: speedtest-cli # Ferramenta de terminal para interagir com os serviços do Systemd e seus logs
         state: present
-    
     - name: Instalação python-pillow
       become: yes
       package:
