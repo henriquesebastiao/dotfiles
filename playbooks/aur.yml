@@ -124,7 +124,7 @@
     - name: Instalação mbake
       kewlfft.aur.aur:
         use: yay
-        name: mbake
+        name: mbake # Formatador de código Makefile
         state: present
       become: yes
       become_user: aur_builder
