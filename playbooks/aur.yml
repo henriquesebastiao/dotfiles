@@ -128,3 +128,10 @@
         state: present
       become: yes
       become_user: aur_builder
+    - name: Instalação gradia
+      kewlfft.aur.aur:
+        use: yay
+        name: gradia # Ferramenta para Edição de capturas de tela
+        state: present
+      become: yes
+      become_user: aur_builder
