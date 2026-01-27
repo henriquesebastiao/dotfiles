@@ -115,3 +115,6 @@ source ~/.aliases
 export PATH="$PATH:/home/hick/.local/bin"
 
 export GPG_TTY=$(tty)
+
+# Adiciona o diretório ~/bin ao PATH
+export PATH="$PATH:/home/hick/bin"

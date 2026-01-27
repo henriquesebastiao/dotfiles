@@ -128,3 +128,10 @@
       package:
         name: yamlfmt
         state: present
+    - name: Instalação cppcheck
+      become: yes
+      package:
+        name: cppcheck
+        state: present
+    - name: Instala o arduino-lint
+      shell: curl -fsSL https://raw.githubusercontent.com/arduino/arduino-lint/main/etc/install.sh | BINDIR=~/.local/bin sh
