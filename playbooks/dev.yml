@@ -134,4 +134,4 @@
         name: cppcheck
         state: present
     - name: Instala o arduino-lint
-      shell: curl -fsSL https://raw.githubusercontent.com/arduino/arduino-lint/main/etc/install.sh | BINDIR=~/.local/bin sh
+      shell: mkdir -p ~/bin && curl -fsSL https://raw.githubusercontent.com/arduino/arduino-lint/main/etc/install.sh | BINDIR=~/bin sh
