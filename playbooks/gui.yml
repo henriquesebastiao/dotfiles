@@ -97,3 +97,8 @@
       package:
         name: solanum # Pomodoro
         state: present
+    - name: Instalação thunderbird
+      become: yes
+      package:
+        name: thunderbird
+        state: present
