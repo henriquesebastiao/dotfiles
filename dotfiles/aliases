@@ -9,6 +9,8 @@ alias pexport-production="poetry export -f requirements.txt --output requirement
 # Docker
 alias dsclean="docker system prune -a"
 alias diclean="docker image prune -a"
+alias dcu="docker compose up -d"
+alias dcd="docker compose down"
 
 # Serial Ports
 # Allow all users to access the serial port

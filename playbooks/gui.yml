@@ -105,3 +105,8 @@
       package:
         name: eartag # Tool for edit music metadata
         state: present
+    - name: Instalação libreoffice-still
+      become: yes
+      package:
+        name: libreoffice-still # Tool for edit music metadata
+        state: present
