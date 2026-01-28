@@ -18,4 +18,10 @@ format:
 	yamlfmt .
 	mbake format Makefile
 
-.PHONY: update install commit compare lint format
+up:
+	vagrant up
+
+destroy:
+	vagrant destroy
+
+.PHONY: update install commit compare lint format up destroy
