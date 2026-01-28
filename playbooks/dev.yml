@@ -58,11 +58,6 @@
       package:
         name: ruby-bundler
         state: present
-    - name: Instalação vagrant
-      become: yes
-      package:
-        name: vagrant
-        state: present
     - name: Instalação zeal
       become: yes
       package:

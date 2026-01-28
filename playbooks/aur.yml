@@ -142,3 +142,10 @@
         state: present
       become: yes
       become_user: aur_builder
+    - name: Instalação vagrant
+      kewlfft.aur.aur:
+        use: yay
+        name: vagrant # Ferramenta para provisionamento de VMs
+        state: present
+      become: yes
+      become_user: aur_builder
