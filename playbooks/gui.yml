@@ -100,3 +100,8 @@
       package:
         name: thunderbird
         state: present
+    - name: Instalação eartag
+      become: yes
+      package:
+        name: eartag # Tool for edit music metadata
+        state: present
