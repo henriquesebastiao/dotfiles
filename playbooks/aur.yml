@@ -135,3 +135,10 @@
         state: present
       become: yes
       become_user: aur_builder
+    - name: Instalação rustdesk-bin
+      kewlfft.aur.aur:
+        use: yay
+        name: rustdesk-bin # Alternativa Open Source ao Anydesk
+        state: present
+      become: yes
+      become_user: aur_builder

@@ -294,3 +294,8 @@
       package:
         name: python-pillow
         state: present
+    - name: Instalação bind
+      become: yes
+      package:
+        name: bind # A complete, highly portable implementation of the DNS protocol (dig, nslookup)
+        state: present
