@@ -268,7 +268,7 @@
         state: present
     - name: Habilita o repositório multilib
       become: yes
-      shell: sudo sed -i '/\[multilib\]/,/Include/s/^#//' /etc/pacman.conf && sudo pacman -Syu
+      shell: sudo sed -i '/\[multilib\]/,/Include/s/^#//' /etc/pacman.conf && sudo pacman -Syu --noconfirm
     - name: Instalação dosfstools
       become: yes
       package:
