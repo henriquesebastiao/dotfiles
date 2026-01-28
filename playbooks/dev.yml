@@ -11,6 +11,11 @@
       package:
         name: docker
         state: present
+    - name: Instalação docker-buildx
+      become: yes
+      package:
+        name: docker-buildx
+        state: present
     - name: Habilita o docker
       shell: sudo systemctl enable --now docker.service && sudo systemctl start docker.service
     - name: Configura docker para executar sem sudo
