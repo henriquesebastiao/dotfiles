@@ -135,3 +135,8 @@
         state: present
     - name: Instala o arduino-lint
       shell: mkdir -p ~/bin && curl -fsSL https://raw.githubusercontent.com/arduino/arduino-lint/main/etc/install.sh | BINDIR=~/bin sh
+    - name: Instalação jdk17-openjdk
+      become: yes
+      package:
+        name: jdk17-openjdk
+        state: present

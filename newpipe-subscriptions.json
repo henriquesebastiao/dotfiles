@@ -1,0 +1,74 @@
+{
+  "subscriptions": [
+    {
+      "name": "Atila Iamarino",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCSTlOTcyUmzvhQi6F8lFi5w"
+    },
+    {
+      "name": "Ben Eater",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA"
+    },
+    {
+      "name": "Brincando com Ideias",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCcGk83PAQ5aGR7IVlD_cBaw"
+    },
+    {
+      "name": "Daniel Romero",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCQQNn842GN-Jh4GaK0WcGuA"
+    },
+    {
+      "name": "Diolinux",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA"
+    },
+    {
+      "name": "Eduardo Mendes",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCAaKeg-BocRqphErdtIUFFw"
+    },
+    {
+      "name": "Fabio Akita",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ"
+    },
+    {
+      "name": "infinitamente",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCqNBcXkVNrotGBQZmE3Hyaw"
+    },
+    {
+      "name": "Julio Lobo",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCcw2dzrBBmt4HriBCg_iLng"
+    },
+    {
+      "name": "LINUXtips",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCJnKVGmXRXrH49Tvrx5X0Sw"
+    },
+    {
+      "name": "Manual do Código",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UClO5RbZy6nGl_CR7sE8nR_Q"
+    },
+    {
+      "name": "melodysheep",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UCR9sFzaG9Ia_kXJhfxtFMBA"
+    },
+    {
+      "name": "Slackjeff",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UClz3DneoYlccluy4hBlx86Q"
+    },
+    {
+      "name": "Sobrevivencialismo",
+      "service_id": 0,
+      "url": "https://www.youtube.com/channel/UClQfWNWk9UsUj317ce5FtXg"
+    }
+  ]
+}

@@ -110,3 +110,8 @@
       package:
         name: libreoffice-still # Tool for edit music metadata
         state: present
+    - name: Instalação tuba
+      become: yes
+      package:
+        name: tuba # O browser do Fediverso
+        state: present
