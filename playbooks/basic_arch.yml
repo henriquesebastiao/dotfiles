@@ -299,3 +299,8 @@
       package:
         name: bind # A complete, highly portable implementation of the DNS protocol (dig, nslookup)
         state: present
+    - name: Instalação nix
+      become: yes
+      package:
+        name: nix
+        state: present
