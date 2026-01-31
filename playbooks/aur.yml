@@ -149,3 +149,10 @@
         state: present
       become: yes
       become_user: aur_builder
+    - name: Instalação tex-fmt
+      kewlfft.aur.aur:
+        use: yay
+        name: tex-fmt # Ferramenta para provisionamento de VMs
+        state: present
+      become: yes
+      become_user: aur_builder
