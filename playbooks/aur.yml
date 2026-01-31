@@ -152,7 +152,14 @@
     - name: Instalação tex-fmt
       kewlfft.aur.aur:
         use: yay
-        name: tex-fmt # Ferramenta para provisionamento de VMs
+        name: tex-fmt
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação python-pdf2image
+      kewlfft.aur.aur:
+        use: yay
+        name: python-pdf2image
         state: present
       become: yes
       become_user: aur_builder

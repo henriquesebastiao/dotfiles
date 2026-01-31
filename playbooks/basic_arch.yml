@@ -304,3 +304,13 @@
       package:
         name: nix
         state: present
+    - name: Instalação imagemagick
+      become: yes
+      package:
+        name: imagemagick
+        state: present
+    - name: Instalação pngquant
+      become: yes
+      package:
+        name: pngquant
+        state: present
