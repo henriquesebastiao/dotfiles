@@ -314,3 +314,8 @@
       package:
         name: pngquant
         state: present
+    - name: Instalação mkcert
+      become: yes
+      package:
+        name: mkcert # Simple tool for making locally-trusted development certificates
+        state: present
