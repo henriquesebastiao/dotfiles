@@ -1,0 +1,6 @@
+Host server
+	Hostname server.local
+	User hick
+	Port 22
+	IdentityFile ~/.ssh/id_ed25519
+
