@@ -7,6 +7,12 @@ config:
   link_dotfile_default: nolink
   link_on_import: nolink
   longkey: false
+variables:
+  keyid: 6F5C3CD702976E14
+trans_install:
+  _decrypt: gpg -q --for-your-eyes-only--no-tty -d {0} > {1}
+trans_update:
+  _encrypt: gpg -q -r {{@@ keyid @@}} --armor --no-tty -o {1} -e {0}
 dotfiles:
   f_config.toml:
     src: config/atuin/config.toml
@@ -134,6 +140,34 @@ dotfiles:
     src: ssh/config
     dst: ~/.ssh/config
     chmod: '600'
+  f_profile:
+    src: profile
+    dst: ~/.profile
+    trans_install: _decrypt
+    trans_update: _encrypt
+  f_spotdl_config.json:
+    src: config/spotdl/config.json
+    dst: ~/.config/spotdl/config.json
+    trans_install: _decrypt
+    trans_update: _encrypt
+  f_torbrowser_settings.json:
+    src: config/torbrowser/settings.json
+    dst: ~/.config/torbrowser/settings.json
+    trans_install: _decrypt
+    trans_update: _encrypt
+  f_nix-channels:
+    src: nix-channels
+    dst: ~/.nix-channels
+  f_pypirc:
+    src: pypirc
+    dst: ~/.pypirc
+    trans_install: _decrypt
+    trans_update: _encrypt
+  f_zprofile:
+    src: zprofile
+    dst: ~/.zprofile
+    trans_install: _decrypt
+    trans_update: _encrypt
 profiles:
   archlinux:
     dotfiles:
@@ -175,6 +209,12 @@ profiles:
     - f_newsflash_gtk.json
     - f_bookmarks
     - f_ssh_config
+    - f_profile
+    - f_spotdl_config.json
+    - f_torbrowser_settings.json
+    - f_nix-channels
+    - f_pypirc
+    - f_zprofile
   homelab:
     dotfiles:
     - f_config.toml
