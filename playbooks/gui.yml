@@ -115,3 +115,8 @@
       package:
         name: tuba # O browser do Fediverso
         state: present
+    - name: Instalação firefox
+      become: yes
+      package:
+        name: firefox # O browser do Fediverso
+        state: present

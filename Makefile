@@ -1,5 +1,5 @@
 update:
-	dotdrop update --profile=archlinux
+	dotdrop update -f --profile=archlinux
 
 install:
 	dotdrop --cfg=/home/hick/git/dotfiles/config.yaml --profile=archlinux install -f
@@ -24,4 +24,10 @@ up:
 destroy:
 	vagrant destroy
 
-.PHONY: update install commit compare lint format up destroy
+encrypt-import:
+	dotdrop import --transw=_encrypt --transr=_decrypt $(filter-out $@,$(MAKECMDGOALS))
+
+%:
+	@:
+
+.PHONY: update install commit compare lint format up destroy encrypt-import
