@@ -108,11 +108,6 @@
       package:
         name: twine # Utilities for interacting with PyPI -> https://github.com/pypa/twine
         state: present
-    - name: Instalação intellij-idea-community-edition
-      become: yes
-      package:
-        name: intellij-idea-community-edition
-        state: present
     - name: Instalação pycharm-community-edition
       become: yes
       package:
