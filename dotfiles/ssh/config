@@ -1,6 +1,5 @@
-Host server
-	Hostname server.local
-	User hick
-	Port 22
-	IdentityFile ~/.ssh/id_ed25519
-
+Host Server
+    HostName server.local
+    User hick
+    IdentityFile /home/hick/.ssh/id_ed25519
+    PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
