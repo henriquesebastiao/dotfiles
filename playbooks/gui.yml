@@ -41,13 +41,13 @@
       package:
         name: virtualbox
         state: present
-    - name: Instalação virtualbox-host-modules-arch
-      become: yes
-      package:
-        name: virtualbox-host-modules-arch
-        state: present
-    - name: Prepara virtualbox
-      shell: sudo modprobe vboxdrv && sudo modprobe vboxnetadp && sudo modprobe vboxnetflt && sudo modprobe -r kvm_intel
+#    - name: Instalação virtualbox-host-modules-arch
+#      become: yes
+#      package:
+#        name: virtualbox-host-modules-arch
+#        state: present
+#    - name: Prepara virtualbox
+#      shell: sudo modprobe vboxdrv && sudo modprobe vboxnetadp && sudo modprobe vboxnetflt && sudo modprobe -r kvm_intel
     - name: Instalação wireshark-qt
       become: yes
       package:

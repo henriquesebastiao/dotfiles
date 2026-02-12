@@ -43,15 +43,8 @@
         state: present
       become: yes
       become_user: aur_builder
-    - name: Instalação chirp-next
-      kewlfft.aur.aur:
-        use: yay
-        name: chirp-next
-        state: present
-      become: yes
-      become_user: aur_builder
     - name: Configura dotfiles
-      shell: dotdrop --cfg=/home/hick/dotfiles/config.yaml --profile=archlinux install -f
+      shell: dotdrop --cfg=/home/hick/git/dotfiles/config.yaml --profile=archlinux install -f
     - name: Instalação httpie-desktop-bin
       kewlfft.aur.aur:
         use: yay
