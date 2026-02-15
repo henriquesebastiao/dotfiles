@@ -168,6 +168,9 @@ dotfiles:
     dst: ~/.zprofile
     trans_install: _decrypt
     trans_update: _encrypt
+  f_51-bluez-fix.conf:
+    src: config/wireplumber/wireplumber.conf.d/51-bluez-fix.conf
+    dst: ~/.config/wireplumber/wireplumber.conf.d/51-bluez-fix.conf
 profiles:
   archlinux:
     dotfiles:
@@ -215,6 +218,7 @@ profiles:
     - f_nix-channels
     - f_pypirc
     - f_zprofile
+    - f_51-bluez-fix.conf
   homelab:
     dotfiles:
     - f_config.toml

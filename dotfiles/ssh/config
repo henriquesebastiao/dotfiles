@@ -3,3 +3,8 @@ Host Server
     User hick
     IdentityFile /home/hick/.ssh/id_ed25519
     PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
+
+Host HS-Switch
+    HostName 172.16.0.1
+    User hick
+    PreferredAuthentications password
