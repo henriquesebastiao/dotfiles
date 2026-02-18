@@ -118,3 +118,5 @@ export GPG_TTY=$(tty)
 
 # Adiciona o diretório ~/bin ao PATH
 export PATH="$PATH:/home/hick/bin"
+
+export PATH="$PATH:/home/hick/.local/share/gem/ruby/3.4.0/bin"
