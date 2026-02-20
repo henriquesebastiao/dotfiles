@@ -156,3 +156,10 @@
         state: present
       become: yes
       become_user: aur_builder
+    - name: Instalação sshpilot-bin
+      kewlfft.aur.aur:
+        use: yay
+        name: sshpilot-bin
+        state: present
+      become: yes
+      become_user: aur_builder

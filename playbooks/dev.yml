@@ -135,3 +135,8 @@
       package:
         name: jdk17-openjdk
         state: present
+    - name: Instalação wralgler
+      become: yes
+      package:
+        name: wralgler  # The CLI for Cloudflare Workers
+        state: present
