@@ -108,11 +108,6 @@
       package:
         name: twine # Utilities for interacting with PyPI -> https://github.com/pypa/twine
         state: present
-    - name: Instalação pycharm-community-edition
-      become: yes
-      package:
-        name: pycharm-community-edition
-        state: present
     - name: Instalação prettier
       become: yes
       package:
@@ -139,4 +134,9 @@
       become: yes
       package:
         name: wralgler  # The CLI for Cloudflare Workers
+        state: present
+    - name: Instalação act
+      become: yes
+      package:
+        name: act  # Run GitHub Actions on local
         state: present

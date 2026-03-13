@@ -118,5 +118,15 @@
     - name: Instalação firefox
       become: yes
       package:
-        name: firefox # O browser do Fediverso
+        name: firefox
+        state: present
+    - name: Instalação obs-studio
+      become: yes
+      package:
+        name: obs-studio
+        state: present
+    - name: Instalação gimp
+      become: yes
+      package:
+        name: gimp
         state: present

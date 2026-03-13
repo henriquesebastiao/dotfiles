@@ -163,3 +163,45 @@
         state: present
       become: yes
       become_user: aur_builder
+    - name: Instalação notion-app-electron
+      kewlfft.aur.aur:
+        use: yay
+        name: notion-app-electron
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação pycharm
+      kewlfft.aur.aur:
+        use: yay
+        name: pycharm
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação spruce-shonubot-git
+      kewlfft.aur.aur:
+        use: yay
+        name: spruce-shonubot-git
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação spotify
+      kewlfft.aur.aur:
+        use: yay
+        name: spotify
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação ttf-times-new-roman
+      kewlfft.aur.aur:
+        use: yay
+        name: ttf-times-new-roman
+        state: present
+      become: yes
+      become_user: aur_builder
+    - name: Instalação eloquent
+      kewlfft.aur.aur:
+        use: yay
+        name: eloquent
+        state: present
+      become: yes
+      become_user: aur_builder
