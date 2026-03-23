@@ -140,3 +140,8 @@
       package:
         name: act  # Run GitHub Actions on local
         state: present
+    - name: Instalação clang
+      become: yes
+      package:
+        name: clang
+        state: present
