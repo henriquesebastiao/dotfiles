@@ -171,6 +171,9 @@ dotfiles:
   f_51-bluez-fix.conf:
     src: config/wireplumber/wireplumber.conf.d/51-bluez-fix.conf
     dst: ~/.config/wireplumber/wireplumber.conf.d/51-bluez-fix.conf
+  f_user_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code/User/settings.json
 profiles:
   archlinux:
     dotfiles:
@@ -219,6 +222,7 @@ profiles:
     - f_pypirc
     - f_zprofile
     - f_51-bluez-fix.conf
+    - f_user_settings.json
   homelab:
     dotfiles:
     - f_config.toml
