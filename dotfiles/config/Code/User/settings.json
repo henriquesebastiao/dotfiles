@@ -94,4 +94,6 @@
     },
     "terminal.integrated.enableVisualBell": true,
     "workbench.colorTheme": "Dark Modern",
+    "makefile.configureOnOpen": true,
+    "liveServer.settings.donotShowInfoMsg": true,
 }

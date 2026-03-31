@@ -1,10 +1,26 @@
-Host Server
+Host server
     HostName server.local
     User hick
     IdentityFile /home/hick/.ssh/id_ed25519
     PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
 
-Host HS-Switch
-    HostName 172.16.0.1
+Host switch
+    HostName switch.local
     User hick
+    IdentityFile /home/hick/.ssh/id_ed25519
+    Port 3522
+    PreferredAuthentications password
+
+Host groove
+    HostName groove.local
+    User hick
+    IdentityFile /home/hick/.ssh/id_ed25519
+    Port 3522
+    PreferredAuthentications password
+
+Host chr
+    HostName chr.henriquesebastiao.com
+    User hick
+    IdentityFile /home/hick/.ssh/id_ed25519
+    Port 3522
     PreferredAuthentications password
