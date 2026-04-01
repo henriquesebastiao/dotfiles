@@ -204,6 +204,9 @@ dotfiles:
     src: scripts/update-dotfiles.sh
     dst: ~/scripts/update-dotfiles.sh
     chmod: '755'
+  f_crontab.conf:
+    src: configs/crontab.conf
+    dst: ~/configs/crontab.conf
 profiles:
   archlinux:
     dotfiles:
@@ -260,3 +263,4 @@ profiles:
     - f_ssh_ssh_config
     - f_sshd_config
     - f_update-dotfiles.sh
+    - f_crontab.conf

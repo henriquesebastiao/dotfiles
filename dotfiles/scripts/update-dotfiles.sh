@@ -2,6 +2,8 @@
 
 sleep 30
 
+crontab -l > /home/hick/configs/crontab.conf
+
 DOTFILES_DIR="/home/hick/git/dotfiles"
 
 cd "$DOTFILES_DIR"
