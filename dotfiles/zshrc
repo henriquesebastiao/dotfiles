@@ -110,6 +110,8 @@ eval "$(atuin init zsh)"
 # Aliases
 source ~/.aliases
 
+# Configure o nano como editor de texto padrão para o terminal
+export EDITOR='nano'
 
 # Created by `pipx` on 2026-01-21 10:32:24
 export PATH="$PATH:/home/hick/.local/bin"

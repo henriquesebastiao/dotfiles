@@ -1,3 +1,6 @@
+import:
+	dotdrop import $(filter-out $@,$(MAKECMDGOALS))
+
 update:
 	dotdrop update -f --profile=archlinux
 
@@ -30,4 +33,4 @@ encrypt-import:
 %:
 	@:
 
-.PHONY: update install commit compare lint format up destroy encrypt-import
+.PHONY: import update install commit compare lint format up destroy encrypt-import

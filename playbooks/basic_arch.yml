@@ -324,3 +324,11 @@
       package:
         name: certbot
         state: present
+    - name: Instalação cronie
+      become: yes
+      package:
+        name: cronie # Para executar programas agendados com cron
+        state: present
+    - name: Ativando cronie
+      become: yes
+      shell: sudo systemctl enable --now cronie
