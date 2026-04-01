@@ -53,5 +53,3 @@ alias codeowners="echo '* @henriquesebastiao' > .github/CODEOWNERS"
 alias restart-sound="systemctl --user restart wireplumber pipewire pipewire-pulse"
 
 alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
-
-# TESTE
