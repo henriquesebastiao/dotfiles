@@ -1,14 +1,14 @@
 {
 	"windowstate": {
 		"isFullScreen": false,
-		"isMaximized": true,
-		"width": 2560,
-		"height": 1011,
-		"x": 1366,
-		"y": 69,
+		"isMaximized": false,
+		"width": 911,
+		"height": 593,
+		"x": 228,
+		"y": 128,
 		"frame": true,
-		"screenLayout": "0:156:1366:768-1366:0:2560:1080",
-		"backgroundColor": "rgb(31, 39, 42)"
+		"screenLayout": "0:0:1366:768",
+		"backgroundColor": "#1E1E1E"
 	},
 	"workspaces": []
 }
