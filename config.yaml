@@ -45,10 +45,6 @@ dotfiles:
   f_user-dirs.locale:
     src: config/user-dirs.locale
     dst: ~/.config/user-dirs.locale
-  f_2026-01-21_03-07-05_linux.conf:
-    src: boot/loader/entries/2026-01-21_03-07-05_linux.conf
-    dst: /boot/loader/entries/2026-01-21_03-07-05_linux.conf
-    chmod: '755'
   f_pacman.conf:
     src: etc/pacman.conf
     dst: /etc/pacman.conf
@@ -207,6 +203,10 @@ dotfiles:
   f_crontab.conf:
     src: configs/crontab.conf
     dst: ~/configs/crontab.conf
+  f_2026-02-03_16-12-51_linux.conf:
+    src: boot/loader/entries/2026-02-03_16-12-51_linux.conf
+    dst: /boot/loader/entries/2026-02-03_16-12-51_linux.conf
+    chmod: '755'
 profiles:
   archlinux:
     dotfiles:
@@ -219,7 +219,6 @@ profiles:
     - f_pypoetry_config.toml
     - f_user-dirs.dirs
     - f_user-dirs.locale
-    - f_2026-01-21_03-07-05_linux.conf
     - f_pacman.conf
     - f_host.conf
     - f_locale.conf
@@ -264,3 +263,4 @@ profiles:
     - f_sshd_config
     - f_update-dotfiles.sh
     - f_crontab.conf
+    - f_2026-02-03_16-12-51_linux.conf

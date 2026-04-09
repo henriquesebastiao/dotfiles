@@ -24,3 +24,9 @@ Host chr
     IdentityFile /home/hick/.ssh/id_ed25519
     Port 3522
     PreferredAuthentications password
+
+Host forgejo
+    HostName 136.248.71.146
+    User ubuntu
+    IdentityFile /home/hick/.ssh/id_ed25519
+    PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
