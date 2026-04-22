@@ -96,4 +96,5 @@
     "workbench.colorTheme": "Dark Modern",
     "makefile.configureOnOpen": true,
     "liveServer.settings.donotShowInfoMsg": true,
+    "claudeCode.preferredLocation": "panel",
 }
