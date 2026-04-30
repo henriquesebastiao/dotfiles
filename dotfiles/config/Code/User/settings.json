@@ -97,4 +97,12 @@
     "makefile.configureOnOpen": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "claudeCode.preferredLocation": "panel",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "dockercompose": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": false,
 }
