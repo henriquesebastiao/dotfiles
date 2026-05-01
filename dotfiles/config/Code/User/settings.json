@@ -98,11 +98,11 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "claudeCode.preferredLocation": "panel",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
         "dockercompose": false
     },
-    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
 }
