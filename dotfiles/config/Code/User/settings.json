@@ -100,9 +100,9 @@
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
-        "markdown": false,
+        "markdown": true,
         "scminput": false,
-        "dockercompose": false
+        "dockercompose": true
     },
     "github.copilot.nextEditSuggestions.enabled": true,
 }
