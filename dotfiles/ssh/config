@@ -1,4 +1,8 @@
-  Host 172.16.0.23
+  Host 172.16.0.2
+    HostName 172.16.0.2
+    User hick
+
+Host 172.16.0.23
     HostName 172.16.0.23
     User hick
 
