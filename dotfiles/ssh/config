@@ -1,3 +1,7 @@
+  Host 172.16.0.23
+    HostName 172.16.0.23
+    User hick
+
 Host server
     HostName server.local
     User hick
