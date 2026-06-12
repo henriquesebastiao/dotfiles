@@ -1,4 +1,10 @@
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
   "active_pane_modifiers": {
     "inactive_opacity": 1.0,
     "border_size": 0.0
@@ -24,6 +30,7 @@
     "dock": "left"
   },
   "project_panel": {
+    "dock": "left",
     "hide_root": false,
     "git_status": true,
     "folder_icons": true,
@@ -40,6 +47,7 @@
   "buffer_line_height": "comfortable",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "agent": {
+    "dock": "right",
     "always_allow_tool_actions": false,
     "button": false,
     "favorite_models": [],

@@ -93,7 +93,6 @@
         "sound": "on"
     },
     "terminal.integrated.enableVisualBell": true,
-    "workbench.colorTheme": "Dark Modern",
     "makefile.configureOnOpen": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "claudeCode.preferredLocation": "panel",
@@ -105,4 +104,8 @@
         "dockercompose": true
     },
     "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorTheme": "Dark Modern",
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "githubPullRequests.pullBranch": "never",
 }

@@ -122,3 +122,4 @@ export GPG_TTY=$(tty)
 export PATH="$PATH:/home/hick/bin"
 
 export PATH="$PATH:/home/hick/.local/share/gem/ruby/3.4.0/bin"
+export CODEFLASH_API_KEY="cf-k6w1pjGjUC3-daCzzEkK1NpftGX2oNNaDhOGmozb3pMmQy6hfOHPxxNdYSthIv6a"
