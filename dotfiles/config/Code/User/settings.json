@@ -3,7 +3,7 @@
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "off",
     "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": false,
     "editor.minimap.autohide": "mouseover",
     "editor.tabSize": 4,
     "explorer.compactFolders": false,
