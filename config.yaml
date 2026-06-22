@@ -196,13 +196,6 @@ dotfiles:
     dst: /etc/ssh/sshd_config
     trans_install: _decrypt
     trans_update: _encrypt
-  f_update-dotfiles.sh:
-    src: scripts/update-dotfiles.sh
-    dst: ~/scripts/update-dotfiles.sh
-    chmod: '755'
-  f_crontab.conf:
-    src: configs/crontab.conf
-    dst: ~/configs/crontab.conf
   f_2026-02-03_16-12-51_linux.conf:
     src: boot/loader/entries/2026-02-03_16-12-51_linux.conf
     dst: /boot/loader/entries/2026-02-03_16-12-51_linux.conf
@@ -261,6 +254,4 @@ profiles:
     - f_environment
     - f_ssh_ssh_config
     - f_sshd_config
-    - f_update-dotfiles.sh
-    - f_crontab.conf
     - f_2026-02-03_16-12-51_linux.conf
