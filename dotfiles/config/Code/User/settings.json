@@ -97,7 +97,7 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "claudeCode.preferredLocation": "panel",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": true,
         "scminput": false,
