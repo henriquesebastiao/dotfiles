@@ -200,6 +200,9 @@ dotfiles:
     src: boot/loader/entries/2026-02-03_16-12-51_linux.conf
     dst: /boot/loader/entries/2026-02-03_16-12-51_linux.conf
     chmod: '755'
+  f_sysctl.conf:
+    src: etc/sysctl.conf
+    dst: /etc/sysctl.conf
 profiles:
   archlinux:
     dotfiles:
@@ -255,3 +258,4 @@ profiles:
     - f_ssh_ssh_config
     - f_sshd_config
     - f_2026-02-03_16-12-51_linux.conf
+    - f_sysctl.conf
