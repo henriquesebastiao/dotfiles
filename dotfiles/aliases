@@ -57,3 +57,6 @@ alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitiz
 # IA
 alias claude-c="claude --dangerously-skip-permissions -c --model sonnet"
 alias cursor="agent"
+
+# GIT
+alias gs="git status"
