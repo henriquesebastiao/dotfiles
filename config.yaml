@@ -167,9 +167,6 @@ dotfiles:
   f_51-bluez-fix.conf:
     src: config/wireplumber/wireplumber.conf.d/51-bluez-fix.conf
     dst: ~/.config/wireplumber/wireplumber.conf.d/51-bluez-fix.conf
-  f_user_settings.json:
-    src: config/Code/User/settings.json
-    dst: ~/.config/Code/User/settings.json
   f_bash_profile:
     src: bash_profile
     dst: ~/.bash_profile
@@ -196,13 +193,16 @@ dotfiles:
     dst: /etc/ssh/sshd_config
     trans_install: _decrypt
     trans_update: _encrypt
-  f_2026-02-03_16-12-51_linux.conf:
-    src: boot/loader/entries/2026-02-03_16-12-51_linux.conf
-    dst: /boot/loader/entries/2026-02-03_16-12-51_linux.conf
-    chmod: '755'
   f_sysctl.conf:
     src: etc/sysctl.conf
     dst: /etc/sysctl.conf
+  f_linux.conf:
+    src: boot/loader/entries/linux.conf
+    dst: /boot/loader/entries/linux.conf
+    chmod: '755'
+  f_user_settings.json:
+    src: config/VSCodium/User/settings.json
+    dst: ~/.config/VSCodium/User/settings.json
 profiles:
   archlinux:
     dotfiles:
@@ -250,12 +250,12 @@ profiles:
     - f_pypirc
     - f_zprofile
     - f_51-bluez-fix.conf
-    - f_user_settings.json
     - f_bash_profile
     - d_ssh_config.d
     - f_99-archlinux.conf
     - f_environment
     - f_ssh_ssh_config
     - f_sshd_config
-    - f_2026-02-03_16-12-51_linux.conf
     - f_sysctl.conf
+    - f_linux.conf
+    - f_user_settings.json

@@ -2,3 +2,23 @@
 # See hosts(5) for details.
 127.0.0.1        localhost
 ::1              localhost
+172.16.0.2 server.local
+172.16.0.2 pihole.local
+172.16.0.2 calibre.local
+172.16.0.2 downtify.local
+172.16.0.2 dozzle.local
+172.16.0.2 duplicati.local
+172.16.0.2 filebrowser.local
+172.16.0.2 freshrss.local
+172.16.0.2 grafana.local
+172.16.0.2 jellyfin.local
+172.16.0.2 librespeed.local
+172.16.0.2 metube.local
+172.16.0.2 navidrome.local
+172.16.0.2 proxy.local
+172.16.0.2 stirling.local
+172.16.0.2 umami.local
+172.16.0.2 uptime.local
+172.16.0.2 vault.local
+172.16.0.2 zabbix.local
+172.16.0.2 speedtest.local
