@@ -108,4 +108,5 @@
     "kotlin.languageServer.enabled": false,
     "kotlin.debugAdapter.enabled": false,
     "githubPullRequests.pullBranch": "never",
+    "remote.autoForwardPortsSource": "hybrid",
 }
