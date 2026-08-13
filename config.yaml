@@ -201,8 +201,8 @@ dotfiles:
     dst: /boot/loader/entries/linux.conf
     chmod: '755'
   f_user_settings.json:
-    src: config/VSCodium/User/settings.json
-    dst: ~/.config/VSCodium/User/settings.json
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code/User/settings.json
 profiles:
   archlinux:
     dotfiles:
