@@ -78,27 +78,20 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "python.terminal.shellIntegration.enabled": false,
     "python.defaultInterpreterPath": "/bin/python3",
-    "database-client.autoSync": true,
-    "redhat.telemetry.enabled": true,
+    "redhat.telemetry.enabled": false,
     // "workbench.iconTheme": "material-icon-theme",
     "accessibility.signals.terminalBell": {
         "sound": "on"
     },
     "terminal.integrated.enableVisualBell": true,
-    "makefile.configureOnOpen": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "claudeCode.preferredLocation": "panel",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": true,
-        "scminput": false,
-        "dockercompose": true
-    },
-    "github.copilot.nextEditSuggestions.enabled": true,
-    // "workbench.colorTheme": "Dark Modern",
-    "kotlin.languageServer.enabled": false,
-    "kotlin.debugAdapter.enabled": false,
     "githubPullRequests.pullBranch": "never",
     "remote.autoForwardPortsSource": "hybrid",
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
 }
