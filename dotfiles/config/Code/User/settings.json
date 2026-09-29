@@ -94,4 +94,7 @@
         "**/.forgejo/workflows/*.yml",
         "**/.forgejo/workflows/*.yaml"
     ],
+    "intellij.region": "americas",
+    "intellij.dataSharing": "none",
+    "claudeCode.preferredLocation": "panel",
 }
