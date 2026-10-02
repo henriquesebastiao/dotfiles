@@ -132,10 +132,6 @@ dotfiles:
   f_bookmarks:
     src: config/gtk-3.0/bookmarks
     dst: ~/.config/gtk-3.0/bookmarks
-  f_ssh_config:
-    src: ssh/config
-    dst: ~/.ssh/config
-    chmod: '600'
   f_profile:
     src: profile
     dst: ~/.profile
@@ -203,6 +199,12 @@ dotfiles:
   f_user_settings.json:
     src: config/Code/User/settings.json
     dst: ~/.config/Code/User/settings.json
+  f_ssh_config:
+    src: ssh/config
+    dst: ~/.ssh/config
+    chmod: '600'
+    trans_install: _decrypt
+    trans_update: _encrypt
 profiles:
   archlinux:
     dotfiles:
@@ -242,7 +244,6 @@ profiles:
     - f_freshrss.json
     - f_newsflash_gtk.json
     - f_bookmarks
-    - f_ssh_config
     - f_profile
     - f_spotdl_config.json
     - f_torbrowser_settings.json
@@ -259,3 +260,4 @@ profiles:
     - f_sysctl.conf
     - f_linux.conf
     - f_user_settings.json
+    - f_ssh_config

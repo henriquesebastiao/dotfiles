@@ -1,40 +1,22 @@
-  Host 172.16.0.2
-    HostName 172.16.0.2
-    User hick
+-----BEGIN PGP MESSAGE-----
 
-Host 172.16.0.23
-    HostName 172.16.0.23
-    User hick
-
-Host server
-    HostName server.local
-    User hick
-    IdentityFile /home/hick/.ssh/id_ed25519
-    PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
-
-Host switch
-    HostName switch.local
-    User hick
-    IdentityFile /home/hick/.ssh/id_ed25519
-    Port 3522
-    PreferredAuthentications password
-
-Host groove
-    HostName groove.local
-    User hick
-    IdentityFile /home/hick/.ssh/id_ed25519
-    Port 3522
-    PreferredAuthentications password
-
-Host chr
-    HostName chr.henriquesebastiao.com
-    User hick
-    IdentityFile /home/hick/.ssh/id_ed25519
-    Port 3522
-    PreferredAuthentications password
-
-Host forgejo
-    HostName 136.248.71.146
-    User ubuntu
-    IdentityFile /home/hick/.ssh/id_ed25519
-    PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
+hQIMA4tGFCiGbSInAQ//bD+wenMwU3Lv/KAoyIT40/AYoSDPPEJqHQgrnGmyDFF2
+yci8gR1l7shIWCPiyyRr+x8wmW8rvWV3BfXY/R5TrxHuph0pjPYicX1IHOFcfiQ+
+FZiVb6TR/Ypmq0LapzcRwcswJDlTjBbfPzbXnBXu8jqPEdicSH43qoGbdL5ieDwr
+ZMVM51iybJ9g+KhBfdmQPn8emEgIWDgEheZVjwTQhFlPFUkPT4eJd9PnRT2baXTa
+p8BK7Z7g+71R/MotCkb6lCQwIy+7jlLc+llUtirf5L3/aGgliorMelIbEchulzXv
+r/4oI2BCu7mtyqKNbKFVWPYiRz5lMzNV/Elp/ZWPN+M3wrKvpWZyC4HuxP3yc2wA
+gngnbQnn4Ngz7v96G/OnIbeSgXEc6AC+PeNYxvAyAqpo4U9tLehxseKUc6QZcqxf
+Jt0F2OcfcMPUj8oYAkGZBdEmMz4bHHVFSLeOJX7pd5OYOmNaI18Zg3tE0qCcKjJ9
+ApevdE38OpaMBhLHj3mposq7ipGqmGiJqOg9tpjkKPt4OImORhJhujBNJy7bQsgC
+msC7CkGSYkr9wqGhup+6B3JoK8wzNlD0WNyXZ3qVTdiDHVE0TW2/Vn075/v79vso
+/e+OkRLys+EmoHOECE5mrrs8/IWmof0lkhNzwspwoJnU3q5j2LLdvJbXyZtz/t3S
+wGMB0V9JdiNmSBAsBzty+qBQt3J9xwCZvYedId9FozK52Dmz21p9aaO+GaFkNmys
+7Vmlus9t64C1S3nm9TNiX62OQAeefekN6oVfxUwLT4awSarBpXqUkLh/bx5THZ70
+5V6Q306T64kz5JULnX5DDHIwo8lhdA8PxykhVdzKBrr9XkOqsy1UaijmWe41nBGa
+h2ccqtS3XSF/SvhdtMXLYKgE6LQWuENuGPDkRw1xRiXNneKR2kSwNKkGL4tqr4Pv
+gSo5AH1OCQndP0HqdoWu+MMmdcj+X6a2NAZzjDJB2tvcLPAis7j1kDvSn7R78wT5
+4tROJK7Z7KEXD+Z+Ytiyf/ZEfBRLVoBWJ/2IYGDQ3q+7q8Pfek4zr0mDWZ0Mppad
+AS1tKRA=
+=w4EH
+-----END PGP MESSAGE-----

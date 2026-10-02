@@ -97,4 +97,7 @@
     "intellij.region": "americas",
     "intellij.dataSharing": "none",
     "claudeCode.preferredLocation": "panel",
+    "workbench.browser.openLocalhostLinks": false,
+    "telemetry.feedback.enabled": false,
+    "workbench.colorTheme": "Light 2026",
 }
