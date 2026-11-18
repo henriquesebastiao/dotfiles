@@ -14,10 +14,6 @@ trans_install:
 trans_update:
   _encrypt: gpg -q -r {{@@ keyid @@}} --armor --no-tty -o {1} -e {0}
 dotfiles:
-  f_config.toml:
-    src: config/atuin/config.toml
-    dst: ~/.config/atuin/config.toml
-    chmod: '600'
   f_config.conf:
     src: config/neofetch/config.conf
     dst: ~/.config/neofetch/config.conf
@@ -208,7 +204,6 @@ dotfiles:
 profiles:
   archlinux:
     dotfiles:
-    - f_config.toml
     - f_config.conf
     - f_settings.json
     - f_zeal.conf

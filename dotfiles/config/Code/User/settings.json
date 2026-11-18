@@ -1,5 +1,5 @@
 {
-    "chat.disableAIFeatures": true, // Desabilita todos os recurso de IA do VS Code
+    "chat.disableAIFeatures": false, // Desabilita todos os recurso de IA do VS Code
     "editor.autoClosingBrackets": "always",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "off",
@@ -99,5 +99,18 @@
     "claudeCode.preferredLocation": "panel",
     "workbench.browser.openLocalhostLinks": false,
     "telemetry.feedback.enabled": false,
+    "git.ignoreRebaseWarning": true,
+    "chat.tools.terminal.autoApprove": {
+        "uv": true,
+        "make": true,
+        "npm --prefix frontend": true
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "dockercompose": true
+    },
     "workbench.colorTheme": "Light 2026",
 }

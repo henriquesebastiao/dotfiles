@@ -3,7 +3,7 @@
 [user]
 	email = contato@henriquesebastiao.com
 	name = Henrique Sebastião
-	signingkey = 6F5C3CD702976E14
+	signingkey = 8B461428866D2227
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
